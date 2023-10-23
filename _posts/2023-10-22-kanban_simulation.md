@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Kanban Simulation"
+into: Introduction to the post
+image: img/abelardo_morell.jpeg
+intro_image: img/abelardo_morell.jpeg
 date: 2023-10-22
 ---
 
