@@ -6,7 +6,7 @@ texture:
   tagline: My Blog
   author: Giovanni Santini
   date_format: "%b %-d, %Y"
-  style: black
+  style: green
   showNav: true
 
   social_links:

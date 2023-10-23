@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Kanban Simulation"
 into: Introduction to the post
 image: img/abelardo_morell.jpeg
