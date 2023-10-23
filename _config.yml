@@ -5,11 +5,11 @@ texture:
   title: "Giovanni's Blog"
   tagline: My Blog
   author: Giovanni Santini
-  texture:
   date_format: "%b %-d, %Y"
+  style: black
+  showNav: true
 
-
-social_links:
-  twitter: thelehhman
-  github:  thelehhman
-  linkedIn: in/thelehhman # format: locale/username
+  social_links:
+    twitter: thelehhman
+    github:  thelehhman
+    linkedIn: in/thelehhman # format: locale/username
