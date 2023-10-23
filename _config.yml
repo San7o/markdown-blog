@@ -1,3 +1,4 @@
-theme: minima
+# theme: minima
+remote_theme: chrisrhymes/mere-blog-theme
 title: "Giovanni's Blog"
 author: "Giovanni Santini"
