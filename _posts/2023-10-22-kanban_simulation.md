@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Kanban Simulation"
 date: 2023-10-22
 ---
