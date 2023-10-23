@@ -1,4 +1,15 @@
-# theme: minima
-remote_theme: chrisrhymes/mere-blog-theme
-title: "Giovanni's Blog"
-author: "Giovanni Santini"
+# theme: minima # Very Minimal
+# remote_theme: chrisrhymes/mere-blog-theme # Not displaying posts
+remote_theme: samarsault/texture
+texture:
+  title: "Giovanni's Blog"
+  tagline: My Blog
+  author: Giovanni Santini
+  texture:
+  date_format: "%b %-d, %Y"
+
+
+social_links:
+  twitter: thelehhman
+  github:  thelehhman
+  linkedIn: in/thelehhman # format: locale/username
