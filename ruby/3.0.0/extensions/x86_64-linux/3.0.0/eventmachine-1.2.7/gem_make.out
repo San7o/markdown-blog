@@ -1,0 +1,19 @@
+current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20231023-15393-ejcopz sitelibdir\=./.gem.20231023-15393-ejcopz clean
+
+current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20231023-15393-ejcopz sitelibdir\=./.gem.20231023-15393-ejcopz
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20231023-15393-ejcopz sitelibdir\=./.gem.20231023-15393-ejcopz install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20231023-15393-ejcopz
+
+current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20231023-15393-ejcopz sitelibdir\=./.gem.20231023-15393-ejcopz clean
