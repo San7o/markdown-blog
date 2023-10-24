@@ -15,7 +15,7 @@ exclude: [ruby]
 
 
 # A description of your site for meta tag, search engine results.
-description: "Cerco e mi circondo di cose che ritengo bellissime, qui condivido tutto quello che mi passa per la testa"
+description: "Cerco e mi circondo di tutto quello che trovo bellissimo, qui condivido tutto quello che mi passa per la testa"
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
