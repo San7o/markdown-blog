@@ -70,7 +70,7 @@ Mi sono poi fermato in una biblioteca che ho trovato vicino all'ostello e ho rip
 ## Praga
 
 A Praga si inizia a sentire l'influenza dell'est europa nell'architettura e nella vita della città. Ho fatto il Free Walking Tour anche qui, questa volta con un gruppo di italiani che per una ragione o per un'altra di trovavano a Praga. La storia della città è parecchio combattuta, tra tante "**defenestrazioni**" e difficoltà a trovare un'indipendenza vera, sento di aver esplorato più nel dettaglio una parte della storia Europea.
-L'ostello in cui ho dormito è stato il migliore tra tutti quelli che oh provato e ho pagato 11€ a notte! Ti lascio il link [qui](https://www.italian.hostelworld.com/st/ostelli/p/265297/brix-hostel/).
+L'ostello in cui ho dormito è stato il migliore tra tutti quelli che ho provato e ho pagato 11€ a notte! Ti lascio il link [qui](https://www.italian.hostelworld.com/st/ostelli/p/265297/brix-hostel/).
 
 {% include image_caption.html imageurl="/images/interrail/P1130986.jpg" title="Praga" caption="Strade di Praga" %}
 
