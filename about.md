@@ -2,7 +2,7 @@
 layout: page
 title: About
 description: Su di me
-feature_image: images/pfp/pfp2.png
+feature_image: images/pfp/pfp2.jpg
 ---
 
 ### Ciao! Sono Giovanni.
