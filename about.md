@@ -1,16 +1,23 @@
 ---
 layout: page
-title: About this blog
-description: An optional about page for Scriptor Jekyll theme
-feature_image: images/about.jpg
+title: About
+description: Su di me
+feature_image: images/pfp/pfp2.png
 ---
 
-**John Doe** is a Senior Art Director from [Vilnius](https://en.wikipedia.org/wiki/Vilnius), Lithuania. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
+### Ciao! Sono Giovanni.
 
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2015.
+Studio informatica e vivo a Trento, città di cui mi sono innamorato profondamente. Mi sento molto vicino al mondo del volontariato e dell'associazionismo, nel tempo libero sono un ballerino, un fotografo, faccio teatro e partecipo ad eventi culturali e di promozione del volontariato.
+Faccio parte della commissione Alpinismo Giovanile della SAT di Trento dove organizziamo uscite e corsi per ragazzi e bambini, molte volte chiamando esperti e ricercatori, attività che mi da molta soddisfazione.
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+Ho deciso di creare questo blog per condividere quello a cui tengo e riflettere su argomenti a me vicini, una sorta di output creativo.
 
-As a hobby, John Doe authors the most influential design blog in Lithuania with over 100,000 page views a month. He lives in Vilnius with his beautiful wife, two boys and one girl.
+Sentiti libero di scrivermi per qualsiasi ragione!
+- Instagram: @giovannisantini03
+- Email: santigio2003@gmail.com
 
-*Thank You for reading!*
+> Instructions for living a life:
+> _Pay attention._
+>_Be astonished._
+>_Tell about it._ 
+>           - Mary Oliver

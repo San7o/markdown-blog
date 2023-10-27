@@ -4,7 +4,7 @@ title: "Interrail - Un Viaggio di Ricerca"
 description: "Ricerca e viaggio sono strettamente collegati, l'uno porta all'altro come se ne fosse la diretta conseguenza. In un periodo di profonda ricerca interiore ho avuto l'opportunità di esplorare l'europa grazie all'interrail, non sono più tornato da quel viaggio."
 date: 2023-10-25
 feature_image: images/interrail/P1130903.png
-tags: [tips, work]
+tags: [viaggi]
 ---
 
 Ricerca e viaggio sono strettamente collegati, l'uno porta all'altro come se ne fosse la diretta conseguenza. In un periodo di profonda ricerca interiore ho avuto l'opportunità di esplorare l'europa grazie all'interrail, non sono più tornato da quel viaggio.
@@ -14,7 +14,7 @@ Ricerca e viaggio sono strettamente collegati, l'uno porta all'altro come se ne 
 
 Molti pensieri e pressioni mi giravano per la testa nel gennaio 2023. Cercavo un modo per **iniziare un nuovo percorso**: era un periodo dove mi sentivo profondamente bloccato in ogni mio tentativo di esprimermi, sentivo il bisogno di cambiare.
 
-Una cosa mi affascinava molto: l'idea di un **grande viaggio da solo** proprio per cercare quello che avevo dentro. Un viaggio da soli ha come vantaggio e svantaggio quello di affidare la nostra sopravvivenza ai soli nostri sensi e alle nostre energie, ma soprattutto di metterci in stretto contatto con l'ambiente e con le persone che incontriamo, ci spinge a superare le nostre barriere. **Siamo noi responsabili di noi stessi e i primi a doversi preoccupare per noi e per quello che abbiamo intorno**, questo viaggio mi ha insegnato davvero molto.
+Una cosa mi affascinava molto: l'idea di un **grande viaggio da solo** proprio per cercare quello che avevo dentro. Un viaggio da soli ha come vantaggio e svantaggio quello di avere esperienza di ogni cosa soltanto con i nostri sensi e dalla nostra prospettiva, ma soprattutto di metterci in stretto contatto con l'ambiente e con le persone che incontriamo, ci spinge ad uscire dalle nostre barriere. **Siamo noi responsabili di noi stessi e i primi a doversi preoccupare per noi e per quello che abbiamo intorno**, questo viaggio mi ha insegnato davvero molto.
 
 > "Questo diario è proprio il racconto, momento dopo momento, di questo viaggio, questo cammino costante che parte dal presupposto che abbiamo tanti problemi e non sappiamo nulla (e mai saremo perfetti) ma possiamo sempre tentare di migliorarci, e questo tentativo non è mai vano."
 

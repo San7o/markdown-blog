@@ -9,7 +9,7 @@
 lang: en-US
 
 # Site title
-title: "Travel Atoms"
+title: "Una vita un viaggio"
 
 exclude: [ruby]
 
@@ -24,7 +24,7 @@ baseurl: ""
 url: "https://travelatoms.netlify.com"
 
 # Favicon
-favicon: images/favicon.png
+favicon: images/favicon.ico
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 google_analytics: ""
@@ -35,12 +35,8 @@ navigation:
     url: /
   - text: About
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
   - text: Tags
     url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
 
 # The shortname for your Disqus site to enable comments.
 disqus: justgoodthemes
