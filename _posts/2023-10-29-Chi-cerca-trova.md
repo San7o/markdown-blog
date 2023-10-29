@@ -50,7 +50,7 @@ Nella sezione "News" ha parecchie cose interessanti, in ogni caso è un altro co
 
 # Università
 
-All'evento c'era anche l'immancabile UniTN come ente di riferimento (e soprattutto rispondere a cento mila domande) per un'esperienza di **studio all'estero**, se sei studente in una qualsiasi università ti puoi informare sui programmi che offrono: Tirocini (anche post laurea), doppia laurea, Erasmus+ e accordi bilaterali fuori dall'UE.
+All'evento c'era anche l'immancabile UniTN come ente di riferimento (e soprattutto per rispondere a cento mila domande) per un'esperienza di **studio all'estero**, se sei studente in una qualsiasi università ti puoi informare sui programmi che offrono: Tirocini (anche post laurea), doppia laurea, Erasmus+ e accordi bilaterali fuori dall'UE.
 
 {% include image_caption.html imageurl="/images/civico13/unitn.jpg" title="UniTn" caption="Sito UniTn" %}
 
