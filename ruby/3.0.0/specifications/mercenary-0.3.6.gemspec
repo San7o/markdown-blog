@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.email = ["tom@mojombo.com".freeze, "parkrmoore@gmail.com".freeze]
   s.homepage = "https://github.com/jekyll/mercenary".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "3.4.21".freeze
+  s.rubygems_version = "3.4.22".freeze
   s.summary = "Lightweight and flexible library for writing command-line apps in Ruby.".freeze
 
-  s.installed_by_version = "3.4.21".freeze if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.4.22".freeze if s.respond_to? :installed_by_version
 
   s.specification_version = 4
 

@@ -5,9 +5,253 @@
         <description>Cerco e mi circondo di tutto quello che trovo bellissimo, qui condivido tutto quello che mi passa per la testa</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 06 Nov 2023 14:02:57 +0100</pubDate>
-        <lastBuildDate>Mon, 06 Nov 2023 14:02:57 +0100</lastBuildDate>
+        <pubDate>Wed, 14 Feb 2024 14:55:46 +0100</pubDate>
+        <lastBuildDate>Wed, 14 Feb 2024 14:55:46 +0100</lastBuildDate>
         <generator>Jekyll v4.0.1</generator>
+        
+            <item>
+                <title>Guida a Trento Capitale Europea del Volontariato</title>
+                <description>&lt;p&gt;“Trento è adesso Capitale europea e italiana del volontariato. Un riconoscimento alla cultura della sua gente, alle esperienze attuali di solidarietà e di partecipazione che continuano a sostenere la crescita della comunità”. In questo articolo andiamo ad analizzare che cosa significa Trento Capitale, quali sono i suoi obiettivi, il sistema di governance, come tu puoi partecipare e la mia esperienza personale.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Trento è adesso Capitale europea e italiana del volontariato. Un riconoscimento alla cultura della sua gente, alle esperienze attuali di solidarietà e di partecipazione che continuano a sostenere la crescita della comunità.” - Sergio Mattarella&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Con queste parole, il 3 febbraio 2024, il presidente della Repubblica Sergio Mattarella inaugura Trento Capitale Europea del Volontariato. E’ il risultato di un lungo percorso di ascolto e di partecipazione da parte di tutti gli attori che operano nel territorio Trentino e dimostra la forza delle sue comunità, dove nelle valli la solidarietà si conserva ancora forte e viva. Ma soprattutto è una grande opportunità per il futuro, per rendere la città un laboratorio di idee e iniziative solidali, partecipate e sostenibili.&lt;/p&gt;
+
+&lt;figure class=&quot;image-card width-wide caption&quot;&gt;
+  &lt;img src=&quot;/images/capitale/gente-felice.jpeg&quot; alt=&quot;Gente Felice&quot; /&gt;
+  
+  &lt;figcaption class=&quot;caption-text&quot;&gt;#gentefelice è lo slogan della campagna pubblicitaria di Trento Capitale che per tutto l&apos;anno decorerà la città, azzardando a sostenere che chi fa volontariato è anche più felice&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Il volontariato esprime una visione del mondo, quella della indivisibilità della condizione umana. Una visione che pone in primo piano la persona, l’integralità della sua vita, il suo pieno diritto a essere parte attiva della comunità.” - Sergio Mattarella&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Citando la professoressa Ericka Costa: “La nostra società non si fonda unicamente su rapporti di scambio razionali in cui ogni attore tende a massimizzare il profitto o il proprio interesse, né su un’efficiente programmazione pubblica delle spese per garantire i servizi. &lt;strong&gt;Esiste una dimensione, che potremmo definire ‘comunitaria’, che non risponde a queste dinamiche: tra cui il volontariato&lt;/strong&gt;”. E’ su questa dimensione che si costruisce un tessuto sociale “costruttivo di tipo dialogico” essenziale, ma che viene spesso trascurato e non valorizzato abbastanza. Trento Capitale è il momento per lanciare questa dimensione ed è l’opportunità per tutti noi di entrare a far parte della comunità in un’ottica di solidarietà.&lt;/p&gt;
+
+&lt;figure class=&quot;image-card width-wide caption&quot;&gt;
+  &lt;img src=&quot;/images/capitale/trento-capitale.jpeg&quot; alt=&quot;Trento Capitale&quot; /&gt;
+  
+  &lt;figcaption class=&quot;caption-text&quot;&gt;La grafica ufficiale di Trento Capitale Europea del Volontariato&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;i-7-obiettivi-del-volontariato&quot;&gt;I 7 obiettivi del volontariato&lt;/h1&gt;
+
+&lt;p&gt;La nomina è stata vinta il 10 Dicembre 2022 quando il CSV del Trentino ha presentato un programma curato e sistematico, individuando 7 obiettivi e linee strategiche per i prossimi 5 anni, attraverso le quali ogni realtà del territorio può partecipare alla costruzione di una visione comune.
+I 7 obiettivi sono:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Creare Opportunità di crescita personale&lt;/strong&gt;: Iniziative che permettono a chi partecipa di acquisire competenze trasversali e/o tecniche.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Creare opportunità di crescita collettiva&lt;/strong&gt;: Iniziative che possono essere considerate un esercizio della cittadinanza attiva portando chi partecipa a sentirsi parte attiva di una comunità.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Città più vivibili e sostenibili&lt;/strong&gt;: Occasioni di sperimentazione per la co-gestione di beni collettivi come esercizio di cittadinanza attiva per la creazione di spazi inclusivi.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Co-costruire politiche pubbliche&lt;/strong&gt;: Attraverso l’ascolto attivo dei cittadini e delle cittadine, le realtà del volontariato e le comunità attivano risposte a bisogni e desideri con il coinvolgimento della Pubblica Amministrazione con l’obiettivo di indirizzare le politiche.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Abitare i luoghi&lt;/strong&gt;: In sinergia con le istituzioni, si creano opportunità per la trasformazione del territorio per renderlo più vivibile, sicuro e sostenibile, sulla base dei bisogni della popolazione.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Solidarietà e accoglienza&lt;/strong&gt;: Iniziative che supportano i valori di cooperazione, solidarietà e accoglienza, in quanto fattori di sviluppo culturale, politico ed economico in grado di creare comunità più inclusive.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Valori europei di democrazia e partecipazione&lt;/strong&gt;: Iniziative che promuovono i principi europei di solidarietà e accoglienza per un’Europa sempre più coesa e solidale.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;image-card width-wide caption&quot;&gt;
+  &lt;img src=&quot;/images/capitale/csv.jpeg&quot; alt=&quot;CSV&quot; /&gt;
+  
+  &lt;figcaption class=&quot;caption-text&quot;&gt;Le anime del CSV Trentino (sono molti di più)&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Il volontariato è libero per definizione; è espressione della libertà di ciascuno.” - Sergio Mattarella&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;ma-come-funziona&quot;&gt;Ma come funziona?&lt;/h1&gt;
+&lt;p&gt;Abbiamo parlato di quali sono gli obiettivi per Trento Capitale, andiamo ora a vedere il sistema che si è costruito per concretizzarli. Andremo a vedere la governance e come anche tu puoi entrare a far parte di un gruppo di lavoro.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-governance&quot;&gt;La governance&lt;/h2&gt;
+&lt;p&gt;Il sistema di governance può essere riassunto nella seguente info-grafica:&lt;/p&gt;
+
+&lt;figure class=&quot;image-card width-wide caption&quot;&gt;
+  &lt;img src=&quot;/images/capitale/governance.jpeg&quot; alt=&quot;Governance&quot; /&gt;
+  
+  &lt;figcaption class=&quot;caption-text&quot;&gt;Infografica della governance&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Capisco che può essere difficile da capire alla prima occhiata, andiamo a vedere punto per punto quali sono gli attori coinvolti:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Comitato di Scopo&lt;/strong&gt;: ha come obiettivo la promozione, anche finanziaria, ed il sostegno in senso lato di tutte le attività ed eventi.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cabina di Regia&lt;/strong&gt;: si riunisce ogni settimana e organizza, partecipa e ha la responsabilità della facilitazione degli altri incontri di governance. Hai il dovere condiviso di aggiornare il Comitato di Scopo e metterli in condizione di poter adempiere alle proprie responsabilità. La cabina è divisa a sua volta nei seguenti gruppi:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Gruppo Fundraising&lt;/strong&gt; (e rapporti istituzionali)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Gruppo Partecipazione&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Gruppo Comunicazione&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Accordi Amministrativi&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Grandi eventi&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Study Visits + Congresso CEV&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Gruppo&lt;/strong&gt; &lt;strong&gt;Bando&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;I gruppi di lavoro&lt;/strong&gt;: questa è la parte più interessante e voglio dedicarci un’intero sotto-paragrafo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;image-card width-wide caption&quot;&gt;
+  &lt;img src=&quot;/images/capitale/inaugurazione.jpg&quot; alt=&quot;Inaugurazione&quot; /&gt;
+  
+  &lt;figcaption class=&quot;caption-text&quot;&gt;Mattarella che saluta gli scout durante la cerimonia di inaugurazione di Trento Capitale il 3 febbraio 2024&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Desc:&lt;/p&gt;
+&lt;h2 id=&quot;i-gruppi-di-lavoro&quot;&gt;I gruppi di lavoro&lt;/h2&gt;
+&lt;p&gt;Uno strumento fondamentale per concretizzare gli obiettivi posti sono i gruppi di lavoro. Ogni gruppo è caratterizzato da un responsabile, degli obiettivi e risultati ben definiti a priori e un’indicazione delle azioni da mettere in campo per raggiungerli.
+I gruppi di lavoro possono essere di 3 tipologie:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Interni&lt;/strong&gt;: una sola realtà (ad esempio il Comune o il CSV)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ristretti&lt;/strong&gt;: partecipano solo delle realtà definite&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Aperti&lt;/strong&gt;: realtà e persone possono partecipare al gruppo, qui è dove tutti possono contribuire alla visione comune&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;gruppi-di-lavoro-interni-e-ristretti&quot;&gt;Gruppi di lavoro interni e ristretti&lt;/h3&gt;
+&lt;p&gt;Ecco una lista dei gruppi di lavoro interni e ristretti, senza andare nel dettaglio:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Narrativa&lt;/li&gt;
+  &lt;li&gt;Formazione e scambi nazionali e europei&lt;/li&gt;
+  &lt;li&gt;Coinvolgimento volontari/e per Capitale&lt;/li&gt;
+  &lt;li&gt;Banca dati del volontariato&lt;/li&gt;
+  &lt;li&gt;Vetrina digitale del volontariato&lt;/li&gt;
+  &lt;li&gt;Piattaforma Matchmaking&lt;/li&gt;
+  &lt;li&gt;Piattaforma di scambio e d’incontro tra realtà del volontariato&lt;/li&gt;
+  &lt;li&gt;Riconoscimento competenze trasversali e tecniche&lt;/li&gt;
+  &lt;li&gt;Volontariato d’impresa&lt;/li&gt;
+  &lt;li&gt;Modello di Misurazione impatto della Cittadinanza Attiva&lt;/li&gt;
+  &lt;li&gt;Bilancio sociale di Trento Capitale Europea del Volontariato&lt;/li&gt;
+  &lt;li&gt;Semplificazione&lt;/li&gt;
+  &lt;li&gt;Adotta una iniziativa
+    &lt;h3 id=&quot;gruppi-di-lavoro-aperti&quot;&gt;Gruppi di lavoro aperti&lt;/h3&gt;
+    &lt;p&gt;Questa invece è la lista dei tavoli di lavoro aperti, andando a vedere quali sono gli obiettivi e i risultati attesi per ognuno di essi.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;gruppo-sensibilizzazione-nelle-scuole&quot;&gt;Gruppo Sensibilizzazione nelle scuole&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Obiettivi del gruppo:&lt;/strong&gt;
+Rafforzare (in termini di efficacia e quantitativi, facendo leva sui Goal del Volontariato) le iniziative finalizzate alla sensibilizzazione di studenti e studentesse
+sull’importanza del volontariato, attraverso la collaborazione tra scuole e realtà di
+volontariato: siano queste interventi nelle scuole (come l’alternanza scuola-volontariato) o formazione di insegnanti o progetti extra-scolastici.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Risultai attesi:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Mappatura delle iniziative proposte dalle scuole e per le scuole.&lt;/li&gt;
+  &lt;li&gt;Racconto delle esperienze a disposizione nella vetrina fisica e digitale del volontariato.&lt;/li&gt;
+  &lt;li&gt;Una comunità di pratica, composta dal numero più alto possibile delle realtà mappate che sia in grado di promuovere e scambiare buone pratiche.&lt;/li&gt;
+  &lt;li&gt;Iniziative innovative di sensibilizzazione per le scuole.&lt;/li&gt;
+  &lt;li&gt;Il Bando Caritro Scuola e Territorio porrà accento sul tema della valorizzazione del volontariato declinato nei temi dei Goal del Volontariato.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;gruppo-giovani-nel-volontariato&quot;&gt;Gruppo Giovani nel volontariato&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Obiettivi del gruppo:&lt;/strong&gt;
+Rafforzare il protagonismo (presenza e capacità decisionale) di chi ha meno di 30
+anni (con particolare attenzione a chi è anche attivista) nel mondo e nelle realtà
+del volontariato, ridefinendo con loro sia la cultura del volontariato sia gli strumenti e le capacità di cui hanno bisogno.
+&lt;strong&gt;Risultai attesi:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Una “academy” del volontariato disegnata da attivisti e attiviste, giovani volontari e volontarie in grado di permettere loro di incidere sulle narrazioni del volontariato, sui suoi modelli organizzativi, di gestione, di creazione di cambiamento.&lt;/li&gt;
+  &lt;li&gt;Bando GIC (Giovani Idee per la Comunità): accompagnamento individualizzato per la presentazione di idee da parte di giovani al fine di portare associazioni locali a sviluppare le idee emerse.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;gruppo-digitalizzazione&quot;&gt;Gruppo Digitalizzazione&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Obiettivi del gruppo:&lt;/strong&gt;
+Istituire una comunità di volontarie e volontari che siano a supporto delle
+organizzazioni di volontariato formali e informali nella digitalizzazione base così
+come in quella più complessa (ossia digitalizzazione come occasione di aggiornamento delle proprie organizzazioni).
+&lt;strong&gt;Risultai attesi:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Una mappa online con una serie di luoghi fisici e virtuali messi a disposizione di chi ha bisogno di supporto al digitale.&lt;/li&gt;
+  &lt;li&gt;Iniziative digitali aggregate su una pagina dedicata del calendario.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;gruppo-creazione-calendario-iniziative-2024-coinvolgimento-e-supporto&quot;&gt;Gruppo Creazione calendario iniziative 2024: coinvolgimento e supporto&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Obiettivi del gruppo:&lt;/strong&gt;
+Diffondere presso le realtà del volontariato l’opportunità di promuovere
+iniziative per il 2024 e supportarle dove necessario nella loro ideazione,
+realizzazione e/o racconto.
+&lt;strong&gt;Risultai attesi:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Pacchetto di elementi a supporto delle iniziative&lt;/li&gt;
+  &lt;li&gt;Laboratori di ideazione divisi per ambiti (4) + 1 trasversale.&lt;/li&gt;
+  &lt;li&gt;Sportello “Capitale Europea” per supportare la declinazione di idee / progetti che applicano a bandi Caritro.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;gruppo-spazi-per-la-cittadinanza&quot;&gt;Gruppo Spazi per la cittadinanza&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Obiettivi del gruppo:&lt;/strong&gt;
+Avviare un processo partecipato con i servizi interessati del comune, con le
+circoscrizioni, con le realtà del volontariato e con il mondo del
+volontariato trentino per l’apertura di almeno uno spazio di comunità entro il 2024.
+&lt;strong&gt;Risultai attesi:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Processo partecipato come modello per l’apertura di spazi di comunità a Trento.&lt;/li&gt;
+  &lt;li&gt;Linee guida per l’apertura del primo spazio di comunità a Trento.&lt;/li&gt;
+  &lt;li&gt;Almeno uno spazio di Comunità.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Se ti interessa uno di questi gruppi o solo avere più informazioni, puoi mandare una mail a &lt;code class=&quot;highlighter-rouge&quot;&gt;essereparte@trentovolo.capital&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;![[maxresdefault.jpg]]
+Desc: Il discorso di Mattarella alla cerimonia di inaugurazione di Trento Capitale il 3 febbraio 2024&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“I sogni non sono illusioni. Sono l’orizzonte a cui guardano coloro che nutrono speranza, per vivere la realtà con passione e per coltivare il desiderio di renderla più umana e più giusta.” - Sergio Mattarella&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;il-sito-web&quot;&gt;Il sito web&lt;/h1&gt;
+&lt;p&gt;Un’ottima risorsa per rimanere aggiornato sui prossimi eventi e opportunità di volontariato è sicuramente il &lt;a href=&quot;https://www.trentovolo.capital/it&quot;&gt;sito dedicato per Trento Capitale&lt;/a&gt; e la newsletter. Dacci un’occhiata, in particolare alla sezione “iniziative” dove è possibile scoprire nuove iniziative ma anche proporne.&lt;/p&gt;
+
+&lt;figure class=&quot;image-card width-wide caption&quot;&gt;
+  &lt;img src=&quot;/images/fiera/sito.jpg&quot; alt=&quot;Sito&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;la-carta-dei-valori-del-volontariato&quot;&gt;La carta dei valori del volontariato&lt;/h1&gt;
+&lt;p&gt;Quali sono i valori fondanti del volontariato? Nel 2001, dopo un’ampia riflessione nazionale, è stata prodotta la &lt;a href=&quot;https://csvnet.it/phocadownload/rapportistudio/CARTA%20DEI%20VALORI%20DEL%20VOLONTARIATO.pdf&quot;&gt;Carta dei valori del volontariato&lt;/a&gt;: una serie di 24 punti che riassume l’identità e la finalità del volontariato italiano. Ti riporto qui un punto:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Il volontariato è, in tutte le sue forme e manifestazioni, &lt;strong&gt;espressione del valore della relazione e della condivisione con l’altro&lt;/strong&gt;. Al centro del suo agire ci sono le &lt;strong&gt;persone&lt;/strong&gt; considerate nella loro dignità umana, nella loro integrità e nel contesto delle relazioni familiari, sociali e culturali in cui vivono. Pertanto considera ogni persona titolare di diritti di cittadinanza, promuove la conoscenza degli stessi e ne tutela l’esercizio concreto e consapevole, favorendo la partecipazione di tutti allo sviluppo civile della società.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;figure class=&quot;image-card width-wide caption&quot;&gt;
+  &lt;img src=&quot;/images/fiera/francobollo.jpg&quot; alt=&quot;Francobollo&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;la-mia-esperienza&quot;&gt;La mia esperienza&lt;/h1&gt;
+
+&lt;p&gt;#todo foto&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“In una stagione in cui emergono spinte estreme all’individualismo, all’egoismo più esasperato, alle tante paure che frenano la vocazione solidale dell’uomo, la cultura della cura assume un forte significato.” - Sergio Mattarella&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;la-mia-visione-del-volontariato&quot;&gt;La mia visione del volontariato&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[Visione Volontariato]], vai pure in depth&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <pubDate>Wed, 14 Feb 2024 00:00:00 +0100</pubDate>
+                <link>http://localhost:4000/Guida-a-trento-capitale</link>
+                <guid isPermaLink="true">http://localhost:4000/Guida-a-trento-capitale</guid>
+                
+                <category>volontariato</category>
+                
+                
+            </item>
         
             <item>
                 <title>Fiera delle Associazioni Universitarie - Trento</title>

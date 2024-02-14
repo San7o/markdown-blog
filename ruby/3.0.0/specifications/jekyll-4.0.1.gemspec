@@ -21,10 +21,10 @@ Gem::Specification.new do |s|
   s.post_install_message = "-------------------------------------------------------------------------------------\nJekyll 4.0 comes with some major changes, notably:\n\n  * Our `link` tag now comes with the `relative_url` filter incorporated into it.\n    You should no longer prepend `{{ site.baseurl }}` to `{% link foo.md %}`\n    For further details: https://github.com/jekyll/jekyll/pull/6727\n\n  * Our `post_url` tag now comes with the `relative_url` filter incorporated into it.\n    You shouldn't prepend `{{ site.baseurl }}` to `{% post_url 2019-03-27-hello %}`\n    For further details: https://github.com/jekyll/jekyll/pull/7589\n\n  * Support for deprecated configuration options has been removed. We will no longer\n    output a warning and gracefully assign their values to the newer counterparts\n    internally.\n-------------------------------------------------------------------------------------\n".freeze
   s.rdoc_options = ["--charset=UTF-8".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.4.0".freeze)
-  s.rubygems_version = "3.4.21".freeze
+  s.rubygems_version = "3.4.22".freeze
   s.summary = "A simple, blog aware, static site generator.".freeze
 
-  s.installed_by_version = "3.4.21".freeze if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.4.22".freeze if s.respond_to? :installed_by_version
 
   s.specification_version = 4
 

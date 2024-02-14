@@ -1,12 +1,12 @@
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/sassc-2.4.0/ext
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/sassc-2.4.0/ext
 /usr/bin/ruby extconf.rb
 creating Makefile
 
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20231023-15393-rkrrkm sitelibdir\=./.gem.20231023-15393-rkrrkm clean
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/sassc-2.4.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20240214-17827-zfknbm sitelibdir\=./.gem.20240214-17827-zfknbm clean
 
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20231023-15393-rkrrkm sitelibdir\=./.gem.20231023-15393-rkrrkm
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/sassc-2.4.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20240214-17827-zfknbm sitelibdir\=./.gem.20240214-17827-zfknbm
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -75,9 +75,9 @@ compiling ./libsass/src/util_string.cpp
 compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.so
 
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20231023-15393-rkrrkm sitelibdir\=./.gem.20231023-15393-rkrrkm install
-/usr/bin/install -c -m 0755 libsass.so ./.gem.20231023-15393-rkrrkm/sassc
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/sassc-2.4.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20240214-17827-zfknbm sitelibdir\=./.gem.20240214-17827-zfknbm install
+/usr/bin/install -c -m 0755 libsass.so ./.gem.20240214-17827-zfknbm/sassc
 
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20231023-15393-rkrrkm sitelibdir\=./.gem.20231023-15393-rkrrkm clean
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/sassc-2.4.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20240214-17827-zfknbm sitelibdir\=./.gem.20240214-17827-zfknbm clean

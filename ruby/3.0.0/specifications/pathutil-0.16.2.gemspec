@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.email = ["jordon@envygeeks.io".freeze]
   s.homepage = "http://github.com/envygeeks/pathutil".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "3.4.21".freeze
+  s.rubygems_version = "3.4.22".freeze
   s.summary = "Almost like Pathname but just a little less insane.".freeze
 
-  s.installed_by_version = "3.4.21".freeze if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.4.22".freeze if s.respond_to? :installed_by_version
 
   s.specification_version = 4
 

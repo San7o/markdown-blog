@@ -1,0 +1,16 @@
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/json-2.7.1/ext/json
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240214-17520-k2bkgs sitelibdir\=./.gem.20240214-17520-k2bkgs clean
+
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240214-17520-k2bkgs sitelibdir\=./.gem.20240214-17520-k2bkgs
+make: Nothing to be done for 'all'.
+
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240214-17520-k2bkgs sitelibdir\=./.gem.20240214-17520-k2bkgs install
+
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240214-17520-k2bkgs sitelibdir\=./.gem.20240214-17520-k2bkgs clean

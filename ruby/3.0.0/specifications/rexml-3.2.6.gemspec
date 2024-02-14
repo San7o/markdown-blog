@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.licenses = ["BSD-2-Clause".freeze]
   s.rdoc_options = ["--main".freeze, "README.md".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.5.0".freeze)
-  s.rubygems_version = "3.4.21".freeze
+  s.rubygems_version = "3.4.22".freeze
   s.summary = "An XML toolkit for Ruby".freeze
 
-  s.installed_by_version = "3.4.21".freeze if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.4.22".freeze if s.respond_to? :installed_by_version
 
   s.specification_version = 4
 

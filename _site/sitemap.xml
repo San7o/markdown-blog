@@ -13,6 +13,10 @@
 <lastmod>2023-11-06T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/Guida-a-trento-capitale</loc>
+<lastmod>2024-02-14T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about</loc>
 </url>
 <url>
@@ -23,5 +27,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/tags</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page2/</loc>
 </url>
 </urlset>

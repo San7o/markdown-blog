@@ -36,6 +36,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    json (2.7.1)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -68,6 +69,7 @@ DEPENDENCIES
   jekyll (~> 4.0.0)
   jekyll-paginate
   jekyll-sitemap
+  json (~> 2.7)
   webrick (~> 1.8)
 
 BUNDLED WITH

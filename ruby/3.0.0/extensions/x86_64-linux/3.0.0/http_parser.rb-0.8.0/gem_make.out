@@ -1,19 +1,19 @@
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 /usr/bin/ruby extconf.rb
 creating Makefile
 
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20231023-15393-7skxre sitelibdir\=./.gem.20231023-15393-7skxre clean
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240214-17827-3wkp13 sitelibdir\=./.gem.20240214-17827-3wkp13 clean
 
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20231023-15393-7skxre sitelibdir\=./.gem.20231023-15393-7skxre
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240214-17827-3wkp13 sitelibdir\=./.gem.20240214-17827-3wkp13
 compiling ruby_http_parser.c
 compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.so
 
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20231023-15393-7skxre sitelibdir\=./.gem.20231023-15393-7skxre install
-/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20231023-15393-7skxre
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240214-17827-3wkp13 sitelibdir\=./.gem.20240214-17827-3wkp13 install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20240214-17827-3wkp13
 
-current directory: /home/santo/Documents/Scriptor-Jekyll-Theme/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20231023-15393-7skxre sitelibdir\=./.gem.20231023-15393-7skxre clean
+current directory: /home/santo/Documents/pages-blog/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240214-17827-3wkp13 sitelibdir\=./.gem.20240214-17827-3wkp13 clean
