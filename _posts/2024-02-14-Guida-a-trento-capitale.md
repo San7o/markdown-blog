@@ -40,7 +40,7 @@ Citando la professoressa Ericka Costa: "La nostra società non si fonda unicamen
 
 >"I sogni non sono illusioni. Sono l’orizzonte a cui guardano coloro che nutrono speranza, per vivere la realtà con passione e per coltivare il desiderio di renderla più umana e più giusta." - Sergio Mattarella
 
-La nomina è stata vinta il 10 Dicembre 2022 quando il CSV del Trentino ha presentato un programma curato e sistematico, individuando 7 obiettivi e linee strategiche per i prossimi 5 anni, attraverso le quali ogni realtà del territorio può partecipare alla costruzione di una visione comune.
+La nomina a Capitale è stata vinta il 10 Dicembre 2022 quando il CSV del Trentino ha presentato un programma curato e sistematico, individuando 7 obiettivi e linee strategiche per i prossimi 5 anni, attraverso le quali ogni realtà del territorio può partecipare alla costruzione di una visione comune.
 
 I 7 obiettivi sono:
 1. **Creare Opportunità di crescita personale**: Iniziative che permettono a chi partecipa di acquisire competenze trasversali e/o tecniche.
