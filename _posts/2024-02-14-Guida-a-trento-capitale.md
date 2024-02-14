@@ -263,7 +263,7 @@ Il volontariato si manifesta in tanti ambiti, ad esempio ci sono associazioni ch
 
 ## Come fare volontariato ci fa bene
 Penso che facendo volontariato si **guadagna** tantissimo, in senso lato, e si imparano valori estremamente importanti proprio perché si lavora in un ambito **umano** e di **comunità**. Alcuni temi che voglio sottolineare sono:
-- **Politica**: chi fa volontariato fa anche politica e si avvicina alla politica. Proprio ora che i giovani si stanno allontanando, ora che molti ragionano per ideali e lasciano fare ai politici quello che gli pare c'è bisogno di agire ed intervenire nella politica, discutere criticamente di quello che stiamo facendo e del da farsi. Queste sono cose che si imparano facendo volontariato, dove si deve pensare alla collettività e non al singolo.
+- **Politica**: chi fa volontariato fa anche politica e si avvicina alla politica. Proprio ora che i giovani si stanno allontanando c'è bisogno di agire ed intervenire nella politica, discutere criticamente di quello che stiamo facendo e del da farsi. Queste sono cose che si imparano facendo volontariato, dove si deve pensare alla collettività e non al singolo.
 - **Comunità**: Il volontariato che crea un senso di comunità che è alla base della partecipazione politica e del funzionamento della democrazia.
 	- **Solitudine**: **la comunità è la soluzione alla solitudine**,  un grande tema che colpisce tutti, giovani e anziani.
 - **Crescita**: Il volontariato forma l'individuo ad essere un cittadino attivo e partecipante alla vita sociale, permette di avere esperienza in una associazione (che è come una piccola azienda) lavorando ad un progetto di tante persone.
