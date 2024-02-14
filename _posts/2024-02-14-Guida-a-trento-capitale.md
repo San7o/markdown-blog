@@ -194,7 +194,7 @@ volontariato trentino per l’apertura di almeno uno spazio di comunità entro i
 Se ti interessa uno di questi gruppi o solamente avere più informazioni, puoi mandare una mail a `essereparte@trentovolo.capital` 
 
 
-{% include image_caption.html imageurl="/images/capitale/maxresdefault.jpg" title="Mattarella" desctiption="Il discorso di Mattarella alla cerimonia di inaugurazione di Trento Capitale il 3 febbraio 2024" %} 
+{% include image_caption.html imageurl="/images/capitale/maxresdefault.jpg" title="Mattarella" caption="Il discorso di Mattarella alla cerimonia di inaugurazione di Trento Capitale il 3 febbraio 2024" %} 
 
 ---
 
@@ -204,7 +204,7 @@ Se ti interessa uno di questi gruppi o solamente avere più informazioni, puoi m
 Un'ottima risorsa per rimanere aggiornato sui prossimi eventi e opportunità di volontariato è sicuramente il [sito dedicato per Trento Capitale](https://www.trentovolo.capital/it) e la newsletter. Dacci un'occhiata, in particolare alla sezione "iniziative" dove è possibile scoprire nuove iniziative ma anche proporne.
 
 
-{% include image_caption.html imageurl="/images/capitale/sito.jpg" title="Sito" desctiption="Il sito web" %}
+{% include image_caption.html imageurl="/images/capitale/sito.jpg" title="Sito" caption="Il sito web" %}
 
 ---
 
