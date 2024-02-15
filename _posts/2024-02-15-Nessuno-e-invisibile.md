@@ -14,11 +14,16 @@ Nel 2021 ho potuto frequentare un corso di Public Speaking presso il mio liceo. 
 ---
 
 # Public Speaking
+
+>"Le persone sopravvalutano quello che possono fare in un anno e sottovalutano quello che possono fare in un decennio"
+
 L'abilità di parlare in pubblico è essenziale al giorno d'oggi. Il modo in cui si presenta un discorso influenza molto l'impatto che si ha sulle persone: a parità di argomentazioni, un buon discorso sicuro può convincere le persone a seguire le tue idee, un discorso mal impostato può invece far perdere l'interesse. [Diversi studi](https://d1wqtxts1xzle7.cloudfront.net/37801312/5000116953-5000182148-1-PB-libre.pdf?1433231815=&response-content-disposition=inline%3B+filename%3DCorrelation_between_Selfconfidence_and_S.pdf&Expires=1707996101&Signature=gpgci-b8C3EuEHMOUiuzXwkNedjpOGI5Lb0~5kSETVlEgD6FQCHe3HFmgP7zAxJRLBEFLwZ5NmSrekbsvowGzIH2noMNvhqdaz~gP8V38EVPJJpwG5j8b3p4R0Lopco9Jhvu-2Qj-WlAA8-Rgd0eq~-zbDRBlZNf723LdxF~qd-pHhO2GnXfkfZ7KJk~d5plE2o-k9qfwxUXKskrICwWepz4GJlgVK0TaLb3ECVFMzneHGvVsufdB8vtE7WH-MxS0KYPHuMbuDclB8YiySnOinZl72ZOqfdmXnywTYAllNoEthyNFjbUSevuh32LwevYrt3qTkkzORejSqZDLPFj~w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA) dimostrano che la capacità di parlare e l'autostima sono profondamente correlati: una bassa autostima invece può portare a grandi problemi, persino alla [depressione](https://www.guidapsicologi.it/articoli/esiste-un-legame-tra-depressione-e-autostima#:~:text=Anche%20l'autostima%20bassa%20pu%C3%B2,probabilit%C3%A0%20di%20soffrire%20di%20depressione.).
 
 Parlare è sempre stata una mia grande difficoltà, qualche anno fa ti avrei detto che è un problema "insormontabile". Non è così. Nel 2021 ho preso la decisione più coraggiosa della mia vita e sono entrato in un corso di scrittura creativa. Qualche mese dopo è iniziato il corso di public speaking e per la seconda volta ho preso tutto il mio coraggio per spingermi ad andarci, la mia vita sarebbe completamente diversa se non avessi preso queste decisioni.
 
 # Struttura del corso
+> You leave your fingerprints behind, so that they know it was make by another person and that person cared.
+
 Il corso faceva parte di un progetto di alternanza di una classe del linguistico: questa classe ha seguito un corso con degli esperti di public speaking, successivamente hanno riproposto il corso agli studenti del liceo totalmente autogestito dalla classe. E' un progetto di alternanza interessantissimo e spero che lo ripropongano, io non ho partecipato per l'alternanza ma come "volontario".
 
 Abbiamo fatto parecchie lezioni sul come presentarsi nel palco, come muoversi, esempi da seguire e da non seguire per avere una buona impressione. Dopo le lezioni teoriche abbiamo iniziato a scrivere il discorso: ogni partecipante era libero di scrivere un discorso personale con l'assistenza della classe che organizzava il corso, che hanno dato una mano fondamentale a tutti.
@@ -29,6 +34,9 @@ Dopo alcuni mesi, con i testi finiti e imparati, abbiamo organizzato un evento T
 {% include image_caption.html imageurl="/images/invisibile/certificato.jpeg" title="Certificato" caption="Foto scattata subito dopo l'evento" %}
 
 # L'idea del tema
+
+> "Gratuità non significa costo zero, significa valore infinito" - Franco Ianeselli
+
 Avevo l'opportunità di parlare a tutti di un'argomento che mi stava davvero a cuore, usare la mia voce per lanciare un messaggio. Questo mi ha messo molta pressione ma mi ha fatto ragionare davvero su quello che voglio dire con il mio tempo. "Se avessi un'unica cosa da dire nella mia vita, cosa sarebbe?".
 
 Ho analizzato con cura come mi sentivo con me stesso e in relazione con il mondo, cercando di visualizzare tutto quello che ho imparato nella mia esperienza. In particolare durante quel periodo stavo cercando la mia voce, stavo combattendo per esprimermi e cercare di vincere la mia introversione quindi questo momento era molto importante. Ho iniziato da questo.

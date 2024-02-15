@@ -1,83 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nessuno è invisibile - La mia TED Talk</title>
-  <meta name="description" content="Nel 2021 ho potuto frequentare un corso di Public Speaking presso il mio liceo. Ripensandoci, in retrospettiva, riconosco l&#39;importanza di quello che è stato ...">
-  <link rel="canonical" href="http://localhost:4000/Nessuno-e-invisibile">
-  <link rel="alternate" type="application/rss+xml" title="Una vita un viaggio Feed"
-    href="http://localhost:4000/feed.xml">
-  
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/png" />
-  
-  <!-- Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%7CNoto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
-  <link href="/assets/css/style.css" rel="stylesheet">
-</head>
-<body>
-
-  <div id="page" class="site">
-    <div class="inner">
-      <header class="site-header">
-  
-  <p class="site-title"><a class="logo-text" href="/">Una vita un viaggio</a></p>
-  
-  <nav class="site-navigation">
-    <div class="site-navigation-wrap">
-      <h2 class="screen-reader-text">Main navigation</h2>
-      <ul class="menu">
-        
-        
-        
-        <li class="menu-item ">
-          <a class="" href="/">Home</a>
-        </li>
-        
-        
-        
-        <li class="menu-item ">
-          <a class="" href="/about/">About</a>
-        </li>
-        
-        
-        
-        <li class="menu-item ">
-          <a class="" href="/tags/">Tags</a>
-        </li>
-        
-        
-        
-        <li class="menu-item ">
-          <a class="" href="https://e670c5f8.sibforms.com/serve/MUIFAPD5IUgXV1VE3FnA1UMC9RuqdufvS8UFG347SXlVfHCdguUki7SAkk1-JqEiaTJQMybPCrSlCac5ZDYPlXgi0lpojt0vYWtPK8wMrMMIPqAB3yOd1ClEGmNkGzyi6IYadjb22uBffVHtaJW2bztyUadJIXkjpLERHw2TCcHiB38WEuh1Sg6xZ2G5FIDuMu_EzWxivJQQobF0">Newsletter</a>
-        </li>
-        
-      </ul><!-- .menu -->
-      <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span
-          class="icon-close" aria-hidden="true"></span></button>
-    </div><!-- .site-navigation-wrap -->
-  </nav><!-- .site-navigation -->
-  <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
-</header>
-
-
-      <main class="main-content fadeInDown delay_075s">
-
-  <article class="post">
-    <header class="post-header">
-      <time class="post-date" datetime="2024-02-15">February 15, 2024</time>
-      <h1 class="post-title">Nessuno è invisibile - La mia TED Talk</h1>
-      <div class="post-meta">
-        Di <span class="post-author">Giovanni Santini</span><span class="post-tags"> in <a href="/tags/#volontariato" rel="tag">volontariato</a></span>
-      </div><!-- .post-meta -->
-      
-      <figure class="post-thumbnail image-card width-wide">
-        <img src="/images/invisibile/talk.jpg" alt="Nessuno è invisibile - La mia TED Talk">
-      </figure><!-- .post-thumbnail -->
-      
-    </header><!-- .post-header -->
-    <div class="post-content">
-      <p>Nel 2021 ho potuto frequentare un corso di Public Speaking presso il mio liceo. In retrospettiva, riconosco l’importanza di quello che è stato un corso del genere. In questo post voglio raccontare come l’ho affrontato, un po’ di background su di me, e il testo integrale del mio discorso.</p>
+I"�(<p>Nel 2021 ho potuto frequentare un corso di Public Speaking presso il mio liceo. In retrospettiva, riconosco l’importanza di quello che è stato un corso del genere. In questo post voglio raccontare come l’ho affrontato, un po’ di background su di me, e il testo integrale del mio discorso.</p>
 
 <!--more-->
 
@@ -114,7 +35,10 @@
 <h1 id="lidea-del-tema">L’idea del tema</h1>
 
 <blockquote>
-  <p>“Gratuità non significa costo zero, significa valore infinito” - Franco Ianeselli</p>
+  <p>Gratuità non significa costo zero, significa valore infinito</p>
+  <ul>
+    <li>Franco Ianeselli</li>
+  </ul>
 </blockquote>
 
 <p>Avevo l’opportunità di parlare a tutti di un’argomento che mi stava davvero a cuore, usare la mia voce per lanciare un messaggio. Questo mi ha messo molta pressione ma mi ha fatto ragionare davvero su quello che voglio dire con il mio tempo. “Se avessi un’unica cosa da dire nella mia vita, cosa sarebbe?”.</p>
@@ -187,83 +111,4 @@ Quelli che escludono, che limitano sono proprio gli indifferenti: loro stessi so
 Quindi il mio appello è questo: possiamo tutti essere volontari quotidiani, finché, utopicamente, in giorno, non sarà più qualcosa di speciale, ma la normalità per tutti.
 Noi non siamo invisibili.</p>
 
-
-    </div><!-- .post-content -->
-    <div class="post-share">
-      <span>Share:</span>
-      <a target="_blank"
-        href="https://twitter.com/intent/tweet?text=Nessuno%20%C3%A8%20invisibile%20-%20La%20mia%20TED%20Talk&amp;url=http://localhost:4000/Nessuno-e-invisibile" rel="noopener">Twitter</a>
-      <a target="_blank"
-        href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/Nessuno-e-invisibile&amp;t=Nessuno%20%C3%A8%20invisibile%20-%20La%20mia%20TED%20Talk" rel="noopener">Facebook</a>
-    </div><!-- .share-post -->
-    <div class="author-box">
-      
-      <div class="author-avatar" style="background-image: url('images/pfp/pfp1.jpg')"><span class="screen-reader-text">Giovanni Santini's Picture</span></div>
-      
-      <div class="author-details">
-        <h2 class="author-title">About Giovanni Santini</h2>
-        <div class="author-bio"><p>Ciao! Sono Giovanni e qui voglio condividere tutto ciò che trovo di bello intorno a me e cose a cui tengo molto.</p>
-</div>
-        
-        <span class="author-location">Trento, Italia</span>
-        
-        
-      </div><!-- .author-details -->
-    </div><!-- .author-box -->
-  </article><!-- .post -->
-    
-
-  
-
-</main><!-- .main-content -->
-
-      <footer class="site-footer">
-  <div class="offsite-links">
-    
-      
-<a href="https://www.youtube.com/@giovannisantini6094" target="_blank" rel="noopener">
-  <span class="fa-youtube" aria-hidden="true"></span>
-  <span class="screen-reader-text">Youtube</span>
-</a>
-
-<a href="https://github.com/San7o" target="_blank" rel="noopener">
-  <span class="fa-github" aria-hidden="true"></span>
-  <span class="screen-reader-text">GitHub</span>
-</a>
-
-<a href="https://www.instagram.com/giovannisantini03" target="_blank" rel="noopener">
-  <span class="fa-instagram" aria-hidden="true"></span>
-  <span class="screen-reader-text">Instagram</span>
-</a>
-
-    
-  </div><!-- .offsite-links -->
-  <div class="footer-bottom">
-    <div class="site-info">
-      
-
-    </div><!-- .site-info -->
-    <a href="#page" id="back-to-top" class="back-to-top"><span class="screen-reader-text">Back to the top </span>&#8593;</a>
-  </div><!-- .footer-bottom -->
-</footer><!-- .site-footer -->
-
-    </div><!-- .inner -->
-  </div><!-- .site -->
-
-  <!-- Scripts -->
-  
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-</script>
-  
-  <script src="/assets/js/plugins.js"></script>
-  <script src="/assets/js/custom.js"></script>
-
-</body>
-</html>
+:ET
