@@ -112,7 +112,7 @@ Ecco una lista dei gruppi di lavoro interni e ristretti, senza andare nel dettag
 - Adotta una iniziativa
 
 ### Gruppi di lavoro aperti
-Questa invece è la lista dei tavoli di lavoro aperti, andando a vedere quali sono gli obiettivi e i risultati attesi per ognuno di essi.
+Questa invece è la lista dei tavoli di lavoro aperti, dove tutti possono entrare, andando a vedere quali sono gli obiettivi e i risultati attesi per ognuno di essi.
 
 ---
 
@@ -191,7 +191,7 @@ volontariato trentino per l’apertura di almeno uno spazio di comunità entro i
 
 ---
 
-Se ti interessa uno di questi gruppi o solamente avere più informazioni, puoi mandare una mail a `essereparte@trentovolo.capital` 
+Se ti interessa entrare in uno di questi gruppi o solamente avere più informazioni, puoi mandare una mail a `essereparte@trentovolo.capital` 
 
 
 {% include image_caption.html imageurl="/images/capitale/maxresdefault.jpg" title="Mattarella" caption="Il discorso di Mattarella alla cerimonia di inaugurazione di Trento Capitale il 3 febbraio 2024" %} 
@@ -240,6 +240,9 @@ Ti dico velocemente quali sono i principali bandi per ricevere fondi nel 2024 pe
 - **Svolta**
 	- Bando Intrecci Possibili
 
+### Per le associazioni
+
+Se sei un'associazione o un gruppo informale puoi contare nell'aiuto sia economico che logistico del sistema di Trento Capitale, per exempio per aiuti di pubblicizzazione o inviti ad eventi di networking.
 
 {% include image_caption.html imageurl="/images/capitale/svolta.jpg" title="Svolta" caption="Locandina bando Svolta" %}
 
