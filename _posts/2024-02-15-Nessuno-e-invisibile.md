@@ -3,7 +3,7 @@ layout: post
 title: "Nessuno è invisibile - La mia TED Talk"
 description: "Nel 2021 ho potuto frequentare un corso di Public Speaking presso il mio liceo. Ripensandoci, in retrospettiva, riconosco l'importanza di quello che è stato un corso del genere. In questo post voglio raccontare come l'ho affrontato, un po' di background su di me, e il testo integrale del mio discorso."
 date: 2024-02-15
-feature_image: images/capitale/mattarella.jpg
+feature_image: images/invisibile/talk.jpg
 tags: [volontariato]
 ---
 
@@ -25,14 +25,20 @@ Abbiamo fatto parecchie lezioni sul come presentarsi nel palco, come muoversi, e
 
 Dopo alcuni mesi, con i testi finiti e imparati, abbiamo organizzato un evento TEDx Youth nella nostra aula magna, dove ogni relatore esponeva il suo discorso. E' stato un grande evento che mi ricordo ancora molto bene a distanza di anni.
 
+
+{% include image_caption.html imageurl="/images/invisibile/certificato.jpeg" title="Certificato" caption="Foto scattata subito dopo l'evento" %}
+
 # L'idea del tema
-Avevo l'opportunità di parlare a tutti di un'argomento che mi stava davvero a cuore, usare la mia voce per lanciare un messaggio. Questo mi ha messo molta pressione ma mi ha fatto anche ragionare davvero su quello che voglio dire con il mio tempo. "Se avessi un'unica cosa da dire nella mia vita, cosa sarebbe?".
+Avevo l'opportunità di parlare a tutti di un'argomento che mi stava davvero a cuore, usare la mia voce per lanciare un messaggio. Questo mi ha messo molta pressione ma mi ha fatto ragionare davvero su quello che voglio dire con il mio tempo. "Se avessi un'unica cosa da dire nella mia vita, cosa sarebbe?".
 
 Ho analizzato con cura come mi sentivo con me stesso e in relazione con il mondo, cercando di visualizzare tutto quello che ho imparato nella mia esperienza. In particolare durante quel periodo stavo cercando la mia voce, stavo combattendo per esprimermi e cercare di vincere la mia introversione quindi questo momento era molto importante. Ho iniziato da questo.
 
 L'introversione è un argomento che mi sta molto a cuore, essendo me stesso particolarmente introverso, ma anche la depressione è purtroppo vicino a me. Sono partito da questo, da una depressione nata dal sentirci invisibili, generalizzata ad una depressione generale che colpisce l'intera società che non è più centrata alle persone come esseri umani. Ma il mio modo di combattere è stato proprio il realizzare di non essere invisibili, e che anche noi possiamo portare un piccolo grande impatto positivo nel mondo intorno a noi.
 
 Guardando la società da vicino, particolarmente al mondo del volontariato, mi sono accorto che c'è bisogno di agire proprio per sconfiggere questa depressione comune, del non sapere cosa fare soprattutto nei giovani. Da qui è nato il mio discorso.
+
+
+{% include image_caption.html imageurl="/images/invisibile/inchino.jpeg" title="Inchino" caption="I partecipanti all'eventi" %}
 
 # Testo Integrale
 
