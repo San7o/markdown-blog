@@ -38,7 +38,7 @@ L'introversione è un argomento che mi sta molto a cuore, essendo me stesso part
 Guardando la società da vicino, particolarmente al mondo del volontariato, mi sono accorto che c'è bisogno di agire proprio per sconfiggere questa depressione comune, del non sapere cosa fare soprattutto nei giovani. Da qui è nato il mio discorso.
 
 
-{% include image_caption.html imageurl="/images/invisibile/inchino.jpeg" title="Inchino" caption="I partecipanti all'eventi" %}
+{% include image_caption.html imageurl="/images/invisibile/inchino.jpeg" title="Inchino" caption="I partecipanti all'evento" %}
 
 # Testo Integrale
 
