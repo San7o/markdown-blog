@@ -4,7 +4,14 @@
 
 To set up Jekyll on local machine please follow the official documentation that can be found here -> https://jekyllrb.com/docs/.
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `bundle exec jekyll serve` to start the Jekyll server.
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run 
+```bash
+bundle exec jekyll serve --incremental
+```
+To build the home page 
+```bash 
+bundle exec jekyll build
+```
 
 ### Manual Deployment
 

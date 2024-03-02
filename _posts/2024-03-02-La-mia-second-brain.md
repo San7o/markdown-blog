@@ -1,0 +1,166 @@
+---
+layout: post
+title: "La mia second brain"
+description: "Hai mai pensato a quanto sarebbe bello avere un sistema personale che memorizzi tutto il tuo **passato**? Conservare tutto quello a cui teniamo, a portata di mano ed in modo organizzato: idee, pensieri, riflessioni... Utilizzare poi questo sistema per tener traccia del presente ed aiutarci a prendere decisioni per il **futuro**. Da questa idea nasce un mio percorso che negli ultimi 3 anni mi ha portato ad un risultato importante e funzionale: **la mia Second Brain**. Vorrei aver avuto qualcosa di simile prima nella mia vita, per questo ora te ne parlo."
+date: 2024-03-02
+feature_image: images/sb/graph.png
+tags: [diario]
+---
+
+Hai mai pensato a quanto sarebbe bello avere un sistema personale che memorizzi tutto il tuo **passato**? Conservare tutto quello a cui teniamo, a portata di mano ed in modo organizzato: idee, pensieri, riflessioni... Utilizzare poi questo sistema per tener traccia del presente ed aiutarci a prendere decisioni per il **futuro**.
+Da questa idea nasce un mio percorso che negli ultimi 3 anni mi ha portato ad un risultato importante e funzionale: **la mia Second Brain**. Vorrei aver avuto qualcosa di simile prima nella mia vita, per questo ora te ne parlo.
+
+<!--more-->
+
+---
+
+
+# Gli obiettivi
+
+Nell'ultimo anno di superiori ho sentito il bisogno di organizzare con cura la mia vita; il salto verso l'università ed il trasloco mi hanno dato l'opportunità per rivedere molti aspetti della mia vita: cercavo di vivere il periodo universitario nel modo più *mindful* possibile. 
+
+Nel tentativo di mettere giù una volta per tutte quello che ho imparato e quello che voglio fare, mi sono posto i seguenti obiettivi per quella che diventerà la mia Second-Brain:
+- Portare chiarezza ai miei pensieri ed emozioni
+- Visualizzare la direzione che sto prendendo e i miei principi / valori
+- Tener traccia dei miei progressi
+- Organizzare i vari aspetti della mia vita
+- Salvare ogni tipo di conoscenza
+- Creare un framework di crescita personale
+Nei seguenti paragrafi andremo a vedere come sono riuscito a realizzare questi obiettivi.
+
+---
+
+# Il diario
+> La storia è iniziata da quando si è iniziato a documentarla
+
+Da parecchi anni tengo un diario cartaceo vecchio stile: e' il modo più semplice e diretto per mantenere i propri pensieri. Consiglio a tutti di iniziare a tenere un diario e penso sia il mio principale strumento di chiarezza mentale.
+
+Ho imparato due cose molto importanti: la prima è prendere l'abitudine di notare tutto quello che trovo interessante scrivendolo da qualche parte, tanti dettagli e pensieri verrebbero persi ogni giorno e salvandoli riesco a passare le giornate in modo più spensierato e avere un ricchissimo museo di idee. La seconda è il rileggere periodicamente le note che ho scritto, capire la direzione generale, riassumere pensieri di più giorni per capirli e capirmi meglio.
+
+{% include image_caption.html imageurl="/images/sb/diario.png" title="Diario" caption="Foto di un mio diario, iniziato il 1 febbraio e finito il 28 aprile 2023" %}
+
+---
+
+## I diari
+Man mano che scrivevo, il diario ha iniziato ad espandersi. Alla fine di ogni settimana lo rileggevo, lo sottolineavo e lo studiavo come se fosse un libro di storia. Dividevo i pensieri in argomenti più generali così da tener traccia di come questi si sviluppavano nel tempo.
+
+Ho iniziato a tenere un secondo diario dove riassumevo le giornate e i punti più importanti. Un'altro ancora come agenda per organizzarmi. Ogni volta che finivo le pagine di un diario, una nuova iterazione nasceva e aggiornavo il mio modo di scrivere.
+
+Ho iniziato a cercare un sistema più completo e più espandibile, più flessibile e funzionale: mi rendevo conto di star dedicando fin troppo tempo a mantenere questo diario ma aveva un'utilità limitata (solo annotare i miei pensieri) e c'era molto potenziale sprecato.
+
+{% include image_caption.html imageurl="/images/sb/diari.png" title="Diari" caption="Foto di alcuni dei miei diari" %}
+---
+# La second Brain
+
+## Cosa è una second brain?
+>Nella filosofia della mente, l’esternalismo è la visione secondo cui ciò che accade nella mente di un individuo non è (interamente) determinato da ciò che accade all’interno del suo corpo, compreso il cervello. 
+>
+>L'esternalismo si presenta in due forme principali: esternalismo sul contenuto mentale ed esternalismo sui veicoli o portatori di quel contenuto. Quest’ultima forma di esternalismo è comunemente nota come **mente estesa**. In gioco ci sono questioni importanti riguardanti la natura della mente e la sua relazione con il mondo, sia naturale che sociale.
+
+Una second brain è un supporto esterno, in questo caso digitale, che contiene una "copia" della nostra mente. A livello pratico, ogni idea che mi viene in mente si trasforma in un file nella mia second brain. Ogni volta che imparo qualcosa (in università, leggendo un libro, da un film...) creo una nota nella second brain. Organizzo piccoli e grandi progetti e todo list nella second brain. E' uno **strumento** **personale e in costante evoluzione** che rispecchia il modo in cui noi lavoriamo per aiutarci ogni giorno, per scaricare tante cose dalla nostra testa: un computer è molto più bravo a ricordare concetti a lungo termine.
+
+{% include image_caption.html imageurl="/images/sb/sb.jpeg" title="Illustrazione" caption="Il cervello che va al difuori della sua forma fisica" %}
+
+---
+
+## Obsidian
+> Our brains are for having ideas, not storing them. 
+
+Attualmente utilizzo [Obsidian](https://obsidian.md/) per la mia second brain e mi trovo particolarmente bene, ma esistono parecchie alternative, anche open source. Obsidian ti permette di linkare le note come se fossero dei link di wikipedia, per accedere velocemente alle diverse note. Consiglio Obsidian per due ragioni:
+- **Plugin della community**: esistono un'infinità di plugin fatti dalla community, completamente gratuiti, che espandono quello che può fare Obsidian a tutto un'altro livello. Per esempio il plugin `Dataview` trasforma l'insieme di tutte le note, chiamato `Vault`, in un database dove è possibile fare query ed estrarre informazioni. Altri esempi sono il poter esportare le note in pdf, diapositive per presentazioni, la completa personalizzazione di ogni parte grafica grazie al CSS: se sei un programmatore o no, Obsidian è in grado di adattarsi alle tue preferenze.
+- **Tutto salvato in locale**: questo è un punto fondamentale per me, ed è la ragione per cui non utilizzerei mai Notion, Ogni nota in Obsidian è salvata in formato `markdown` nel tuo pc. Il markdown è uno standard riconosciuto ovunque ed è compatibile con qualsiasi applicazione, non rischiarei mai di perdere i tuoi dati o di rimaner chiuso in un sistema: se un giorno decidessi di cambiare applicazione, non avrei nessun problema a trasferire tutte le mie note. Dato che è un sistema importante per organizzare il mio tempo, ci tengo molto a poter accedere alle note in ogni momento e con sicurezza, se gli sviluppatori di Obsidian fallissero o i loro server andassero down per esempio, io continuerei ad utilizzare l'applicazione normalmente dato che è installata localmente.
+
+
+{% include image_caption.html imageurl="/images/sb/obsidian.png" title="Obsidian" caption="Uno screen di obsidian mentre sto scrivendo questo post" %}
+
+---
+
+# La struttura
+
+Per un sistema del genere è importante essere parecchio organizzati. Non c'è bisogno di partire con tutto pronto e pensato, io consiglio di iniziare in piccolo ed iterare con il tempo, senza aver paura di eliminare vecchie convenzioni e abitudini. Detto ciò, esistono parecchie [template](https://publish.obsidian.md/hub/03+-+Showcases+%26+Templates/Vaults/%F0%9F%97%82%EF%B8%8F+Vaults) online già preparate e molti vido su youtube per approfondire.
+
+Dei buon principi da seguire sono:
+- Seguire una struttura gerarchica di qualche tipo
+- Rivisitare vecchie note e mantenere la struttura 
+- Avere sezioni centrate su un obiettivo
+- Avere delle convenzioni sui nomi consistenti
+- Seguire il principio di **actionability**: imparare al fine di agire, tenere note con il fine di usarle.
+
+### Zettelkasten Method
+Un altro metodo famoso è il **Zettelkasten Method** che consiste di creare note **atomiche** nel senso di molto piccole, e di assegnarli un **tag** per ritrovarle in fretta.
+
+Ora ti faccio vedere velocemente come ho organizzato le cartelle e secondo quale principio, così puoi prendere qualche spunto. Ricordo che questa organizzazione è in continuo cambiamento ed evoluzione, fa parte di come è stato ideato.
+
+---
+
+# PARA
+>Both the significance and sheer volume of this information make **the question of how we engage with it a vital one**. How can we make the most of the astonishing resources at our fingertips while retaining a sense of control and understanding? How, moreover, can we make the most of the human capacity for reasoning and creativity in an age where technologies like big data and artificial intelligence are encroaching on ever-more areas of expertise?
+
+Un metodo famoso per organizzare le note è seguire la regola del **PARA**: ogni nota viene posta in una delle seguenti sezioni: Progetti, Aree, Risorse, Archivio. Andiamole a vedere.
+
+## Projects
+ Progetti a breve termine con un'inizio e una fine chiaro
+- Cosa mi sono promesso di fare quest'anno?
+- Quali compiti devo completare?
+
+{% include image_caption.html imageurl="/images/sb/projects.png" title="Projects" caption="Projects" %}
+
+---
+## Areas
+Aree di miglioramento, responsabilità a lungo termine. Dei progetti possono diventare delle aree quando diventano più seri.
+- Cosa devo imparare estremamente bene per la mia carriera?
+- In quali aree della mia vita devo portare attenzione per essere felice?
+
+
+{% include image_caption.html imageurl="/images/sb/areas.png" title="Areas" caption="Areas" %}
+
+---
+## Lighthouse
+Topic di interessi che potrebbero essere utilizzati in futuro, cose che riguardo periodicamente e che mi danno direzione, per questo il nome "Lighthouse"
+- Cosa voglio capire meglio?
+- Esempi interessanti per un futuro progetto
+- Liste che rivedo periodicamente
+
+
+{% include image_caption.html imageurl="/images/sb/lighthouse.png" title="Lighthouse" caption="Lighthouse" %}
+
+---
+## Museum
+Note non più attive dalle categorie precedenti. E' importare tener la second brain pulita e spostare le note che non utilizziamo più qua dentro.
+
+Questa sezione è gigantesca e come un museo contiene tutto quello che ho fatto, il mio passato.
+
+{% include image_caption.html imageurl="/images/sb/museum.png" title="Museum" caption="Museum" %}
+
+---
+
+## Altro
+Altre sezioni sono: un calendario, TODO list, kanban per organizzare il lavoro in diversi progetti, e un sistema di personal finance con Ledger (è un formato super interessante, ne parlerò in modo più approfondito in un altro post). Inoltre utilizzo github per salvare le mie note nel cloud.
+
+---
+
+# Consigli
+Eccoti due consigli che ho imparato tenendo una second brain
+
+Per prima cosa, è importante mantenere una struttura piuttosto semplice nel suo utilizzo, veloce da leggere e modificabile, che segua i principi di actionability. Questo richiede una particolare cura ma è necessaria per renderle lo strumento utilizzabile al meglio.
+
+Un altro problema è quello di utilizzare la second brain solo quando necessaria, memorizzare le cose che puoi ritenere utile per tenere "accesa" la mente principale. Parecchie volte ho passato tanto tempo a scrivere nella second brain pensando che è come se salvassi pensieri per sempre, ma può diventare troppo o addirittura ossessivo concentrarsi troppo sullo scrivere note. E' importante trovare un bilancio sano.
+
+---
+
+# Link Utili
+[Questo](https://www.youtube.com/@obsidiancommunitytalks9199/videos) canale youtube è pazzesco, contiene tantissime risorse su obsidian e idee per la tua second brain.
+
+[Questo](https://www.youtube.com/watch?v=DbsAQSIKQXk) è il video che mi ha convinto a scaricare Obsidian e te lo consiglio, in generale questo canale youtube condivide tante cose interessanti per chi è più "nerd".
+
+Il libro [Building a Second Brain](https://www.amazon.it/Building-Second-Brain-Organise-Potential-ebook/dp/B09MDNDYYF) è una buona risorsa per essere introdotti al concetto di una second brain.
+
+{% include image_caption.html imageurl="/images/sb/yt.png" title="Youtube" caption="Canale youtube citato sopra" %}
+
+---
+# Conclusione
+Ci sarebbe parecchio da approfondire ma questo post è già parecchio lungo, da quando ho iniziato questo progetto ho avuto solo esperienze positive e mi aiuta parecchio ogni giorno ad organizzarmi al meglio.
+
+
+
+
