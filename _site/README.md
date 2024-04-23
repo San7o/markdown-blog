@@ -1,5 +1,9 @@
 # My Personal Blog
 
+The blog is currently hosted here:
+
+[https://unavitaunviaggio.netlify.app/](https://unavitaunviaggio.netlify.app/)
+
 ### Local Instalation
 
 To set up Jekyll on local machine please follow the official documentation that can be found here -> https://jekyllrb.com/docs/.

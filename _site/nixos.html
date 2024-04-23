@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NixOS - Come configurare linux</title>
+  <meta name="description" content="Un&#39;introduzione a NixOS">
+  <link rel="canonical" href="https://travelatoms.netlify.com/nixos">
+  <link rel="alternate" type="application/rss+xml" title="Una vita un viaggio Feed"
+    href="https://travelatoms.netlify.com/feed.xml">
+  
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/png" />
+  
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%7CNoto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="page" class="site">
+    <div class="inner">
+      <header class="site-header">
+  
+  <p class="site-title"><a class="logo-text" href="/">Una vita un viaggio</a></p>
+  
+  <nav class="site-navigation">
+    <div class="site-navigation-wrap">
+      <h2 class="screen-reader-text">Main navigation</h2>
+      <ul class="menu">
+        
+        
+        
+        <li class="menu-item ">
+          <a class="" href="/">Home</a>
+        </li>
+        
+        
+        
+        <li class="menu-item ">
+          <a class="" href="/about/">About</a>
+        </li>
+        
+        
+        
+        <li class="menu-item ">
+          <a class="" href="/tags/">Tags</a>
+        </li>
+        
+        
+        
+        <li class="menu-item ">
+          <a class="" href="https://e670c5f8.sibforms.com/serve/MUIFAPD5IUgXV1VE3FnA1UMC9RuqdufvS8UFG347SXlVfHCdguUki7SAkk1-JqEiaTJQMybPCrSlCac5ZDYPlXgi0lpojt0vYWtPK8wMrMMIPqAB3yOd1ClEGmNkGzyi6IYadjb22uBffVHtaJW2bztyUadJIXkjpLERHw2TCcHiB38WEuh1Sg6xZ2G5FIDuMu_EzWxivJQQobF0">Newsletter</a>
+        </li>
+        
+      </ul><!-- .menu -->
+      <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span
+          class="icon-close" aria-hidden="true"></span></button>
+    </div><!-- .site-navigation-wrap -->
+  </nav><!-- .site-navigation -->
+  <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+</header>
+
+
+      <main class="main-content fadeInDown delay_075s">
+
+  <article class="post">
+    <header class="post-header">
+      <time class="post-date" datetime="2024-03-02">March 2, 2024</time>
+      <h1 class="post-title">NixOS - Come configurare linux</h1>
+      <div class="post-meta">
+        Di <span class="post-author">Giovanni Santini</span><span class="post-tags"> in <a href="/tags/#linux" rel="tag">linux</a></span>
+      </div><!-- .post-meta -->
+      
+      <figure class="post-thumbnail image-card width-wide">
+        <img src="/images/nixos/neofetch.jpg" alt="NixOS - Come configurare linux">
+      </figure><!-- .post-thumbnail -->
+      
+    </header><!-- .post-header -->
+    <div class="post-content">
+      <p>Chi lavora nell’informatica (o semplicemente è uno smanettone) ha bisogno di un sistema operativo stabile, che non si rompa e che quando si rompe può tornare ad una situazione funzionante. Linux è considerato un sistema stabile server-side, ma quando lo si utilizza quotidianamente come desktop si incorre spesso a diverse problematiche: il kernel non parte dopo che abbiamo installato qualche patch, problemi con grub che non riconosce le partizioni, pacchetti che si rompono dopo un’aggiornamento …
+In questo post parleremo di una distribuzione linux che risolve molti problemi comuni ad altre distribuzioni: <strong>NixOS</strong>.</p>
+
+<!--more-->
+
+<hr />
+
+<h1 id="cosa-è-nixos">Cosa è NixOS</h1>
+<p>NixOS è una distribuzione Linux che si distingue dalle altre per essere <strong>totalmente replicabile</strong>. L’intero sistema operativo viene generato da un file di configurazione: i pacchetti, i servizi, tutta la customizzazione (neovim, window manager, ssh…) vengono gestiti da un’unica sorgente. In altre parole, <strong>se due computer hanno lo stesso file di configurazione, sostanzialmente hanno un sistema operativo identico</strong>. Questo ci permette di condividere il file di configurazione con altri utenti, o con altri PC, così da sincronizzarli.</p>
+
+<p>Se quello che hai letto ti interessa, ora andremo a svelare come questa magia funziona e come sfruttare la potenza di NixOS al meglio.</p>
+
+<figure class="image-card width-wide caption">
+  <img src="/images/nixos/website.png" alt="NixOS website" />
+  
+  <figcaption class="caption-text">The official NixOS website, showing the latest release 23.11</figcaption>
+  
+</figure>
+<hr />
+
+<h1 id="elementi-di-un-file-di-configurazione">Elementi di un file di configurazione</h1>
+
+<p>Andiamo a vedere quali sono i componenti fondamentali di un file di configurazione.</p>
+
+<p>Quando installi NixOS, verranno generati due file in <code class="highlighter-rouge">/etc/nixos</code>: <strong>hardware-configuration.nix</strong> e <strong>configuration.nix</strong>. Da questi file verrà generato tutto il sistema operativo (non è necessario che si trovino in <code class="highlighter-rouge">/etc</code> infatti sarà possibile specificare la loro posizione quando si builda tutto). Viene divisa la configurazione hardware dal resto, così che il file <code class="highlighter-rouge">configuration.nix</code> è totalmente indipendente dal sistema e funzionerà ovunque. Questi file sono scritti in un linguaggio di programmazione funzionale chiamato <strong>Nix</strong>, non è essenziale sapere come Nix funziona per configurare il suo sistema ma se vuoi approfondire puoi guardare <a href="https://nixos.org/manual/nix/stable/language/">qua</a>.</p>
+
+<p>Andiamo a vedere la configurazione default di <code class="highlighter-rouge">configuration.nix</code>:</p>
+
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Edit this configuration file to define what should be installed on</span>
+<span class="c"># your system.  Help is available in the configuration.nix(5) man page</span>
+<span class="c"># and in the NixOS manual (accessible by running ‘nixos-help’).</span>
+
+<span class="p">{</span> <span class="nv">config</span><span class="p">,</span> <span class="nv">pkgs</span><span class="p">,</span> <span class="o">...</span> <span class="p">}:</span>
+
+<span class="p">{</span>
+  <span class="nv">imports</span> <span class="o">=</span>
+    <span class="p">[</span> <span class="c"># Include the results of the hardware scan.</span>
+      <span class="sx">./hardware-configuration.nix</span>
+    <span class="p">];</span>
+
+  <span class="c"># Bootloader.</span>
+  <span class="nv">boot</span><span class="o">.</span><span class="nv">loader</span><span class="o">.</span><span class="nv">systemd-boot</span><span class="o">.</span><span class="nv">enable</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="nv">boot</span><span class="o">.</span><span class="nv">loader</span><span class="o">.</span><span class="nv">efi</span><span class="o">.</span><span class="nv">canTouchEfiVariables</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+  <span class="nv">networking</span><span class="o">.</span><span class="nv">hostName</span> <span class="o">=</span> <span class="s2">"nixos"</span><span class="p">;</span> <span class="c"># Define your hostname.</span>
+  <span class="c"># networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.</span>
+
+  <span class="c"># Configure network proxy if necessary</span>
+  <span class="c"># networking.proxy.default = "http://user:password@proxy:port/";</span>
+  <span class="c"># networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";</span>
+
+  <span class="c"># Enable networking</span>
+  <span class="nv">networking</span><span class="o">.</span><span class="nv">networkmanager</span><span class="o">.</span><span class="nv">enable</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+  <span class="c"># Set your time zone.</span>
+  <span class="nv">time</span><span class="o">.</span><span class="nv">timeZone</span> <span class="o">=</span> <span class="s2">"Europe/Rome"</span><span class="p">;</span>
+
+  <span class="c"># Select internationalisation properties.</span>
+  <span class="nv">i18n</span><span class="o">.</span><span class="nv">defaultLocale</span> <span class="o">=</span> <span class="s2">"en_US.UTF-8"</span><span class="p">;</span>
+
+  <span class="nv">i18n</span><span class="o">.</span><span class="nv">extraLocaleSettings</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nv">LC_ADDRESS</span> <span class="o">=</span> <span class="s2">"it_IT.UTF-8"</span><span class="p">;</span>
+    <span class="nv">LC_IDENTIFICATION</span> <span class="o">=</span> <span class="s2">"it_IT.UTF-8"</span><span class="p">;</span>
+    <span class="nv">LC_MEASUREMENT</span> <span class="o">=</span> <span class="s2">"it_IT.UTF-8"</span><span class="p">;</span>
+    <span class="nv">LC_MONETARY</span> <span class="o">=</span> <span class="s2">"it_IT.UTF-8"</span><span class="p">;</span>
+    <span class="nv">LC_NAME</span> <span class="o">=</span> <span class="s2">"it_IT.UTF-8"</span><span class="p">;</span>
+    <span class="nv">LC_NUMERIC</span> <span class="o">=</span> <span class="s2">"it_IT.UTF-8"</span><span class="p">;</span>
+    <span class="nv">LC_PAPER</span> <span class="o">=</span> <span class="s2">"it_IT.UTF-8"</span><span class="p">;</span>
+    <span class="nv">LC_TELEPHONE</span> <span class="o">=</span> <span class="s2">"it_IT.UTF-8"</span><span class="p">;</span>
+    <span class="nv">LC_TIME</span> <span class="o">=</span> <span class="s2">"it_IT.UTF-8"</span><span class="p">;</span>
+  <span class="p">};</span>
+
+  <span class="c"># Configure keymap in X11</span>
+  <span class="nv">services</span><span class="o">.</span><span class="nv">xserver</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nv">layout</span> <span class="o">=</span> <span class="s2">"it"</span><span class="p">;</span>
+    <span class="nv">xkbVariant</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+  <span class="p">};</span>
+
+  <span class="c"># Configure console keymap</span>
+  <span class="nv">console</span><span class="o">.</span><span class="nv">keyMap</span> <span class="o">=</span> <span class="s2">"it2"</span><span class="p">;</span>
+
+  <span class="c"># Define a user account. Don't forget to set a password with ‘passwd’.</span>
+  <span class="nv">users</span><span class="o">.</span><span class="nv">users</span><span class="o">.</span><span class="nv">lanto</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nv">isNormalUser</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="nv">description</span> <span class="o">=</span> <span class="s2">"lanto"</span><span class="p">;</span>
+    <span class="nv">extraGroups</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"networkmanager"</span> <span class="s2">"wheel"</span> <span class="p">];</span>
+    <span class="nv">packages</span> <span class="o">=</span> <span class="kn">with</span> <span class="nv">pkgs</span><span class="p">;</span> <span class="p">[];</span>
+  <span class="p">};</span>
+
+  <span class="c"># Allow unfree packages</span>
+  <span class="nv">nixpkgs</span><span class="o">.</span><span class="nv">config</span><span class="o">.</span><span class="nv">allowUnfree</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+  <span class="c"># List packages installed in system profile. To search, run:</span>
+  <span class="c"># $ nix search wget</span>
+  <span class="nv">environment</span><span class="o">.</span><span class="nv">systemPackages</span> <span class="o">=</span> <span class="kn">with</span> <span class="nv">pkgs</span><span class="p">;</span> <span class="p">[</span>
+  <span class="c">#  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.</span>
+  <span class="c">#  wget</span>
+     <span class="nv">git</span>
+  <span class="p">];</span>
+
+  <span class="c"># Some programs need SUID wrappers, can be configured further or are</span>
+  <span class="c"># started in user sessions.</span>
+  <span class="c"># programs.mtr.enable = true;</span>
+  <span class="c"># programs.gnupg.agent = {</span>
+  <span class="c">#   enable = true;</span>
+  <span class="c">#   enableSSHSupport = true;</span>
+  <span class="c"># };</span>
+
+  <span class="c"># List services that you want to enable:</span>
+
+  <span class="c"># Enable the OpenSSH daemon.</span>
+  <span class="c"># services.openssh.enable = true;</span>
+
+  <span class="c"># Open ports in the firewall.</span>
+  <span class="c"># networking.firewall.allowedTCPPorts = [ ... ];</span>
+  <span class="c"># networking.firewall.allowedUDPPorts = [ ... ];</span>
+  <span class="c"># Or disable the firewall altogether.</span>
+  <span class="c"># networking.firewall.enable = false;</span>
+
+  <span class="c"># This value determines the NixOS release from which the default</span>
+  <span class="c"># settings for stateful data, like file locations and database versions</span>
+  <span class="c"># on your system were taken. It‘s perfectly fine and recommended to leave</span>
+  <span class="c"># this value at the release version of the first install of this system.</span>
+  <span class="c"># Before changing this value read the documentation for this option</span>
+  <span class="c"># (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).</span>
+  <span class="nv">system</span><span class="o">.</span><span class="nv">stateVersion</span> <span class="o">=</span> <span class="s2">"23.05"</span><span class="p">;</span> <span class="c"># Did you read the comment?</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+<h2 id="break-down">Break down</h2>
+
+<p>All’inizio importiamo delle dipendenze che ci servono all’interno del blocco principale: config e pkgs.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{ config, pkgs, ... }:
+</code></pre></div></div>
+
+<p>Segue un blocco <code class="highlighter-rouge">imports</code>: questa funzione prende una lista di files e li importa, ossia gli esegue. Dunque tutto il codice dentro <code class="highlighter-rouge">./hardware-configuration.nix</code> verrà eseguito.</p>
+
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">imports</span> <span class="o">=</span>
+    <span class="p">[</span> <span class="c"># Include the results of the hardware scan.</span>
+      <span class="sx">./hardware-configuration.nix</span>
+    <span class="p">];</span>
+</code></pre></div></div>
+
+<p>Nel resto del file vengono settati vari campi e impostazioni, sono abbastanza intuitivi.
+Per esempio, <code class="highlighter-rouge">time.timeZone = "Europe/Rome;"</code> imposta la timezone a quella di Roma, se volessi usare un’altra timezone, posso mettere per esempio <code class="highlighter-rouge">America/New_York</code></p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Enable networking</span>
+<span class="nv">networking</span><span class="o">.</span><span class="nv">networkmanager</span><span class="o">.</span><span class="nv">enable</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="c"># Set your time zone.</span>
+<span class="nv">time</span><span class="o">.</span><span class="nv">timeZone</span> <span class="o">=</span> <span class="s2">"Europe/Rome"</span><span class="p">;</span>
+
+<span class="c"># Select internationalisation properties.</span>
+<span class="nv">i18n</span><span class="o">.</span><span class="nv">defaultLocale</span> <span class="o">=</span> <span class="s2">"en_US.UTF-8"</span><span class="p">;</span>
+
+<span class="c"># ...</span>
+
+</code></pre></div></div>
+
+<p><strong>La lista completa delle opzioni può essere trovata <a href="https://search.nixos.org/options">qui</a>, puoi fare sempre riferimento a questo sito per vedere quali opzioni devi scegliere per impostare tutto quello che vuoi.</strong></p>
+
+<p>Capita che alcune cose non sono intuitive o c’è bisogno di fare dell’ulteriore setup per far funzionare qualcosa, per questo puoi cercare quello che devi installare nella wiki. Per esempio questa è la pagina per installare i drivers <a href="https://nixos.wiki/wiki/Nvidia">nvidia</a> . Come altra risorsa puoi vedere i file di configurazione di altre persone che trovi pubblici su github, spesso questa è la cosa migliore (per esempio vedere come qualcuno ha impostato un certo plugin di vim).</p>
+
+<p>Vediamo un’esempio di hardware-configuration</p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Do not modify this file!  It was generated by ‘nixos-generate-config’</span>
+<span class="c"># and may be overwritten by future invocations.  Please make changes</span>
+<span class="c"># to /etc/nixos/configuration.nix instead.</span>
+<span class="p">{</span> <span class="nv">config</span><span class="p">,</span> <span class="nv">lib</span><span class="p">,</span> <span class="nv">pkgs</span><span class="p">,</span> <span class="nv">modulesPath</span><span class="p">,</span> <span class="o">...</span> <span class="p">}:</span>
+
+<span class="p">{</span>
+  <span class="nv">imports</span> <span class="o">=</span>
+    <span class="p">[</span> <span class="p">(</span><span class="nv">modulesPath</span> <span class="o">+</span> <span class="s2">"/installer/scan/not-detected.nix"</span><span class="p">)</span>
+    <span class="p">];</span>
+
+  <span class="nv">boot</span><span class="o">.</span><span class="nv">initrd</span><span class="o">.</span><span class="nv">availableKernelModules</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"vmd"</span> <span class="s2">"xhci_pci"</span> <span class="s2">"ahci"</span> <span class="s2">"nvme"</span> <span class="s2">"usb_storage"</span> <span class="s2">"sd_mod"</span> <span class="p">];</span>
+  <span class="nv">boot</span><span class="o">.</span><span class="nv">initrd</span><span class="o">.</span><span class="nv">kernelModules</span> <span class="o">=</span> <span class="p">[</span> <span class="p">];</span>
+  <span class="nv">boot</span><span class="o">.</span><span class="nv">kernelModules</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"kvm-intel"</span> <span class="p">];</span>
+  <span class="nv">boot</span><span class="o">.</span><span class="nv">extraModulePackages</span> <span class="o">=</span> <span class="p">[</span> <span class="p">];</span>
+
+  <span class="nv">fileSystems</span><span class="o">.</span><span class="s2">"/"</span> <span class="o">=</span>
+    <span class="p">{</span> <span class="nv">device</span> <span class="o">=</span> <span class="s2">"/dev/disk/by-uuid/6c8225f5-d190-4e1f-b58c-2fe3ea7a86c6"</span><span class="p">;</span>
+      <span class="nv">fsType</span> <span class="o">=</span> <span class="s2">"ext4"</span><span class="p">;</span>
+    <span class="p">};</span>
+
+  <span class="nv">fileSystems</span><span class="o">.</span><span class="s2">"/boot"</span> <span class="o">=</span>
+    <span class="p">{</span> <span class="nv">device</span> <span class="o">=</span> <span class="s2">"/dev/disk/by-uuid/6014-271C"</span><span class="p">;</span>
+      <span class="nv">fsType</span> <span class="o">=</span> <span class="s2">"vfat"</span><span class="p">;</span>
+    <span class="p">};</span>
+
+  <span class="nv">swapDevices</span> <span class="o">=</span> <span class="p">[</span> <span class="p">];</span>
+
+  <span class="c"># Enables DHCP on each ethernet and wireless interface. In case of scripted networking</span>
+  <span class="c"># (the default) this is the recommended approach. When using systemd-networkd it's</span>
+  <span class="c"># still possible to use this option, but it's recommended to use it in conjunction</span>
+  <span class="c"># with explicit per-interface declarations with `networking.interfaces.&lt;interface&gt;.useDHCP`.</span>
+  <span class="nv">networking</span><span class="o">.</span><span class="nv">useDHCP</span> <span class="o">=</span> <span class="nv">lib</span><span class="o">.</span><span class="nv">mkDefault</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="c"># networking.interfaces.eno1.useDHCP = lib.mkDefault true;</span>
+  <span class="c"># networking.interfaces.enp0s20f0u2.useDHCP = lib.mkDefault true;</span>
+  <span class="c"># networking.interfaces.wlo1.useDHCP = lib.mkDefault true;</span>
+
+  <span class="nv">nixpkgs</span><span class="o">.</span><span class="nv">hostPlatform</span> <span class="o">=</span> <span class="nv">lib</span><span class="o">.</span><span class="nv">mkDefault</span> <span class="s2">"x86_64-linux"</span><span class="p">;</span>
+  <span class="nv">powerManagement</span><span class="o">.</span><span class="nv">cpuFreqGovernor</span> <span class="o">=</span> <span class="nv">lib</span><span class="o">.</span><span class="nv">mkDefault</span> <span class="s2">"powersave"</span><span class="p">;</span>
+  <span class="nv">hardware</span><span class="o">.</span><span class="nv">cpu</span><span class="o">.</span><span class="nv">intel</span><span class="o">.</span><span class="nv">updateMicrocode</span> <span class="o">=</span> <span class="nv">lib</span><span class="o">.</span><span class="nv">mkDefault</span> <span class="nv">config</span><span class="o">.</span><span class="nv">hardware</span><span class="o">.</span><span class="nv">enableRedistributableFirmware</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Questo file è generato automaticamente in base all’hardware del tuo pc, dovrebbe essere cambiato (rigenerato) solo se modifichi qualcosa a livello hardware o di partizioni.</p>
+
+<hr />
+
+<h2 id="buildare-il-sistema--magia">Buildare il sistema (+ magia)</h2>
+<p>Per buildare il sistema operativo dato un file di configurazione basterà eseguire il comando</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>nixos-rebuild switch
+</code></pre></div></div>
+
+<p>A questo punto una nuova versione del sistema verrà generata e, <strong>quando avvieremo grub, avremo l’elenco di tutte le versioni precedenti, dandoci la possibilità di scegliere quale avviare!</strong> Questa cosa è potentissima e mi ha salvato tanto tempo, parecchie volte, quando non mi si avviava nemmeno tty: so che <strong>potrò sempre tornare indietro ad una versione precedente</strong>.</p>
+
+<hr />
+
+<h2 id="strutturare-un-file-di-configurazione">Strutturare un file di configurazione</h2>
+<p>Grazie alla funzione <code class="highlighter-rouge">import</code> possiamo dividere il file monolitico <code class="highlighter-rouge">configuration.nix</code> in un file più strutturato. Possiamo dividere i settaggi per argomenti come window manager, code editor, shells… Vedremo più avanti la struttura che utilizzo per il mio file di configurazione, ma prima dobbiamo parlare di altre funzionalità interessanti.</p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">imports</span> <span class="o">=</span> <span class="p">[</span>
+	<span class="sx">./main-user.nix</span>
+<span class="p">]</span>
+</code></pre></div></div>
+
+<p>In <code class="highlighter-rouge">./main-user.nix</code></p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span> <span class="nv">whatever</span><span class="p">,</span> <span class="o">...</span> <span class="p">}:</span>
+
+<span class="p">{</span>
+   <span class="c"># Config here</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="nix-packet-manager">Nix packet manager</h2>
+
+<p>NixOS si basa sul Nix packet manager, uno dei più grandi e forniti packet managers disponibile su <strong>Linux</strong> e <strong>MacOS</strong>, con più di <strong>80 000 pacchetti disponibili</strong>. Per installare un pacchetto basterà aggiungere il nome del pacchetto nel file di configurazione, dentro <code class="highlighter-rouge">systemPackages</code>. E’ possibile cercare il nome di un pacchetto nel <a href="https://search.nixos.org/packages">sito ufficiale</a>. Questo è un’estratto dal mio file che puoi trovare <a href="https://github.com/San7o/nixos-dotfiles">qui</a>:</p>
+
+<p><code class="highlighter-rouge">modules/default.nix</code></p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">environment.systemPackages</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">with</span><span class="w"> </span><span class="err">pkgs;</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="err">#</span><span class="w"> </span><span class="err">Applications</span><span class="w">
+    </span><span class="err">firefox</span><span class="w">
+    </span><span class="err">discord</span><span class="w">
+    </span><span class="err">telegram-desktop</span><span class="w">
+    </span><span class="err">obsidian</span><span class="w">
+</span><span class="p">]</span><span class="err">;</span><span class="w">
+</span></code></pre></div></div>
+
+<p>In questo modo i pacchetti vengono installati a livello di <strong>sistema</strong>, quindi per tutti gli utenti. Più avanti andremo a vedere un metodo per installare pacchetti specifici per utente.</p>
+
+<hr />
+
+<h2 id="nix-shell">Nix-Shell</h2>
+
+<p>Per garantire un’ambiente di sviluppo consistente tra diverse configurazioni, Nix introduce il comando <code class="highlighter-rouge">nix-shell</code>. Possiamo passare al comando <code class="highlighter-rouge">nix-shell</code> i pacchetti da utilizzare nell’ambiente della shell con la flag <code class="highlighter-rouge">-p</code> oppure utilizzando un file come il seguente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nix-shell <span class="nt">-p</span> jdk
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">java-shell.nix</code></p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">with</span><span class="w"> </span><span class="err">(import</span><span class="w"> </span><span class="err">&lt;nixpkgs&gt;</span><span class="w"> </span><span class="p">{}</span><span class="err">);</span><span class="w">
+</span><span class="err">mkShell</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">buildInputs</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">[</span><span class="w"> 
+        </span><span class="err">jdk</span><span class="w">
+    </span><span class="p">]</span><span class="err">;</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nix-shell java-shell.nix
+</code></pre></div></div>
+
+<p>I due approcci sono equivalenti, ma avere un file può essere più comodo e persistente. In questo modo verranno portati in scope i pacchetti specificati, o scaricati qualora non lo fossero già.</p>
+
+<hr />
+
+<h2 id="flakes">Flakes</h2>
+<p>I flakes sono una funzione sperimentale, ma ormai adottata da tutta la community, che permette di bloccare i pacchetti ad una certa versione, come il file Cargo.toml per Rust oppure package.json per javascript.</p>
+
+<p>Per utilizzare i flakes, bisogna abilitare le experimental features nella tua configurazione:</p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">settings</span><span class="o">.</span><span class="nv">experimental-features</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"nix-command"</span> <span class="s2">"flakes"</span> <span class="p">];</span>
+</code></pre></div></div>
+<p>Puoi poi generare il file flake.nix con questo comando</p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">nxi</span> <span class="nv">flake</span> <span class="nv">init</span>
+</code></pre></div></div>
+<p>Ecco un’esempio</p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="nv">description</span> <span class="o">=</span> <span class="s2">"A very basic flake"</span><span class="p">;</span>
+
+  <span class="nv">inputs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nv">nixpkgs</span><span class="o">.</span><span class="nv">url</span> <span class="o">=</span> <span class="s2">"github:nixos/nixpkgs?ref=nixos-unstable"</span><span class="p">;</span>
+  <span class="p">};</span>
+
+  <span class="nv">outputs</span> <span class="o">=</span> <span class="p">{</span> <span class="nv">self</span><span class="p">,</span> <span class="nv">nixpkgs</span> <span class="p">}:</span> <span class="p">{</span>
+
+    <span class="nv">packages</span><span class="o">.</span><span class="nv">x86_64-linux</span><span class="o">.</span><span class="nv">hello</span> <span class="o">=</span> <span class="nv">nixpkgs</span><span class="o">.</span><span class="nv">legacyPackages</span><span class="o">.</span><span class="nv">x86_64-linux</span><span class="o">.</span><span class="nv">hello</span><span class="p">;</span>
+
+    <span class="nv">packages</span><span class="o">.</span><span class="nv">x86_64-linux</span><span class="o">.</span><span class="nv">default</span> <span class="o">=</span> <span class="nv">self</span><span class="o">.</span><span class="nv">packages</span><span class="o">.</span><span class="nv">x86_64-linux</span><span class="o">.</span><span class="nv">hello</span><span class="p">;</span>
+
+  <span class="p">};</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Il file è composto da due sezioni principali</p>
+<ul>
+  <li><code class="highlighter-rouge">inputs</code> contiene una lista di attributi con tutte le dipendenze del flake</li>
+  <li><code class="highlighter-rouge">outputs</code> è una funzione che data una lista di attributi degli inputs, genera un nuovo schema per nixos (puoi approfondire <a href="https://nixos.wiki/wiki/Flakes">qui</a>)</li>
+</ul>
+
+<p>Puoi poi eseguire la tua flake con questo comando</p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">sudo</span> <span class="nv">nixos-rebuild</span> <span class="nv">switch</span> <span class="o">--</span><span class="nv">flake</span> <span class="sx">/path/tp/flake.nix</span>
+</code></pre></div></div>
+
+<h3 id="creare-profili-con-flakes">Creare profili con flakes</h3>
+<p>Possiamo decidere cosa buildare da riga di comando creando dei profili all’interno di <code class="highlighter-rouge">flake.nix</code>, per esempio questo profilo mi esegue tutto il codice dentro <code class="highlighter-rouge">./hosts/hp-laptop</code> e <code class="highlighter-rouge">./modules</code></p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Profile name is "lanto@hp"</span>
+<span class="s2">"lanto@hp"</span> <span class="o">=</span> <span class="nv">nixpkgs</span><span class="o">.</span><span class="nv">lib</span><span class="o">.</span><span class="nv">nixosSystem</span> <span class="p">{</span>
+    <span class="nv">system</span> <span class="o">=</span> <span class="s2">"x86_64-linux"</span><span class="p">;</span>
+    <span class="nv">modules</span> <span class="o">=</span> <span class="p">[</span>
+
+		<span class="c"># System and Hardware Configuration</span>
+	    <span class="sx">./hosts/hp-laptop</span>
+	    <span class="sx">./modules</span>
+    <span class="p">];</span>
+<span class="p">};</span>
+</code></pre></div></div>
+<p>Ovviamente posso avere un numero arbitrario di profili, poi decidere quale usare mettendo un carattere <code class="highlighter-rouge">#</code> dopo il path della tua flake, in questo modo:</p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">sudo</span> <span class="nv">nixos-rebuild</span> <span class="nv">switch</span> <span class="o">--</span><span class="nv">flake</span> <span class="sx">/path/to/flake.nix</span><span class="c">#lanto@hp</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="home-manager">Home Manager</h2>
+<p>Home manager è un sistema per gestire la configurazione per un’utente o più utenti, quindi <strong>senza usare sudo</strong>. I comandi e le configurazioni che abbiamo visto in precedenza vengono applicati all’intero sistema e quindi a tutti gli users, con <strong>home-manager puoi differenziare i vari users con delle configurazioni ad hoc senza influenzare l’intero sistema</strong>. E’ molto utile se hai altre persone che stanno usando il sistema e non hanno accesso a sudo ma vogliono un certo grado di autonomia su quello che possono gestire. La cosa interessante è che per usare home manager non c’è bisogno di avere NixOS come sistema operativo ma <strong>può funzionare un qualunque sistema</strong>.</p>
+
+<p>Puoi installare home-manager li livello di sistema come un pacchetto qualunque (ma questo non ti permetterà di usarlo senza sudo) oppure installarlo separatamente con i seguenti comandi (ho riportato i comandi per nixpkgs 23.11):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nix-channel <span class="nt">--add</span> https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz home-manager
+
+nix-channel <span class="nt">--update</span>
+nix-shell <span class="s1">'&lt;home-manager&gt;'</span> <span class="nt">-A</span> <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>Puoi specificare la tua configurazione in un file come questo</p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span> <span class="nv">config</span><span class="p">,</span> <span class="nv">pkgs</span><span class="p">,</span> <span class="o">...</span> <span class="p">}:</span>
+
+<span class="p">{</span>
+  <span class="c"># TODO please change the username &amp; home directory to your own</span>
+  <span class="nv">home</span><span class="o">.</span><span class="nv">username</span> <span class="o">=</span> <span class="s2">"santo"</span><span class="p">;</span>
+  <span class="nv">home</span><span class="o">.</span><span class="nv">homeDirectory</span> <span class="o">=</span> <span class="s2">"/home/santo"</span><span class="p">;</span>
+
+  <span class="c"># Packages that should be installed to the user profile.</span>
+  <span class="nv">home</span><span class="o">.</span><span class="nv">packages</span> <span class="o">=</span> <span class="kn">with</span> <span class="nv">pkgs</span><span class="p">;</span> <span class="p">[</span>
+
+    <span class="nv">neofetch</span>
+    <span class="c"># ...</span>
+    
+  <span class="p">];</span>
+
+  <span class="c"># The rest of the configuration</span>
+
+  
+  <span class="p">};</span>
+
+  <span class="c"># This value determines the home Manager release that your</span>
+  <span class="c"># configuration is compatible with. This helps avoid breakage</span>
+  <span class="c"># when a new home Manager release introduces backwards</span>
+  <span class="c"># incompatible changes.</span>
+  <span class="c">#</span>
+  <span class="c"># You can update home Manager without changing this value. See</span>
+  <span class="c"># the home Manager release notes for a list of state version</span>
+  <span class="c"># changes in each release.</span>
+  <span class="nv">home</span><span class="o">.</span><span class="nv">stateVersion</span> <span class="o">=</span> <span class="s2">"23.11"</span><span class="p">;</span>
+
+  <span class="c"># Let home Manager install and manage itself.</span>
+  <span class="nv">programs</span><span class="o">.</span><span class="nv">home-manager</span><span class="o">.</span><span class="nv">enable</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="err">}</span>
+</code></pre></div></div>
+
+<p>Puoi buildare con il comando:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>home-manager switch
+</code></pre></div></div>
+<p>Home-manger è anche parecchio più veloce rispetto a buildare l’intero sistema, inoltre non aggiunge nuove entrare al boot loader, quindi occupa meno memoria.
+Consiglio: è comodo importare la configurazione di home-manager all’interno della configurazione del sistema (per esempio in un profilo di una flake) così che si rebuilda anche la home quando si builda l’intero sistema.</p>
+
+<hr />
+
+<h2 id="altri-comandi-utili">Altri comandi utili</h2>
+<p>NixOS può occupare tanto spazio specialmente se si rebuilda il sistema parecchie volte. Si possono usare questi comandi per liberare un po’ di memoria</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nix-channel <span class="nt">--update</span>
+<span class="nb">sudo </span>nix-channel <span class="nt">--update</span>
+<span class="nb">sudo rm</span> /nix/var/nix/gcroots/auto/<span class="k">*</span>
+nix-collect-garbage <span class="nt">-d</span>
+<span class="nb">sudo </span>nix-collect-garbage <span class="nt">-d</span>
+<span class="nb">sudo </span>nix-store <span class="nt">--optimize</span>
+</code></pre></div></div>
+
+<p>Puoi anche decidere di buildare il sistema non in modo permanente, quindi senza aggiungere una nuova entrata nel boot loader, in questo modo (molto utile per testare configurazioni):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nixos-requild test
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="tour-della-mia-configurazione">Tour della mia configurazione</h1>
+
+<p>Puoi trovare la configurazione che uso aggiornata sul mio <a href="https://github.com/San7o/nixos-dotfiles">github</a>.
+Ho organizzato la gerarchia in questo modo:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── build.sh                        # Easy to use build script
+├── flake.lock                      # Lock file for flakes
+├── flake.nix                       # All flakes profiles are defined here
+├── home                            # Home Manager configurations
+│   ├── lanto                       # Minimal user with just the necessary stuff
+│   │   ├── default.nix             
+│   │   └── dev
+│   │       ├── default.nix
+│   │       └── git.nix             # Git configurations and setting up credentials
+│   ├── santo                       # Power user with many programs
+│   │   ├── default.nix
+│   │   ├── dev
+│   │   │   ├── default.nix
+│   │   │   └── git.nix
+│   │   └── programs
+│   │       └── default.nix
+│   └── shared                      # Pakages and configurations shared between users
+│       ├── default.nix
+│       ├── desktop
+│       │   ├── default.nix
+│       │   ├── hyprland.conf       # Hyprland
+│       │   ├── hyprpaper.conf      # Wallpapers
+│       │   ├── i3.nix
+│       │   ├── neofetch.nix
+│       │   ├── ranger.nix
+│       │   ├── rofi.nix
+│       │   └── waybar.nix
+│       ├── dev
+│       │   ├── default.nix
+│       │   └── neovim.nix          # Neovim Plugins
+│       └── shells
+│           ├── alacritty.nix
+│           ├── bash.nix
+│           ├── default.nix
+│           ├── fhs.nix             # FHS filesystem
+│           ├── kitty.nix           # I use kitty
+│           ├── shell.nix
+│           └── zsh.nix
+├── hosts                           # Configuration specific per machine
+│   ├── acer-laptop                 # Backup / Second Laptop
+│   │   ├── configuration.nix
+│   │   ├── default.nix
+│   │   └── hardware-configuration.nix
+│   ├── desktop                     # Main workstation, nvidia drivers
+│   │   ├── configuration.nix
+│   │   ├── default.nix
+│   │   └── hardware-configuration.nix
+│   └── hp-laptop                   # Unversity note taking and programming
+│       ├── configuration.nix
+│       ├── default.nix
+│       └── hardware-configuration.nix
+├── misc                            # Some notes I took that I might need in future
+│   ├── powertop.md
+│   └── screenshots
+│       ├── 01.jpg
+│       ├── 02.jpg
+│       ├── 03.jpg
+│       └── 04.jpg
+├── modules                         # System-wide configuration and packages
+│   ├── cache-server.nix
+│   ├── default.nix                 # All system packages
+│   ├── memory-optimization.nix
+│   ├── network-manager.nix
+│   ├── nvidia.nix                  # Nvidia settings
+│   └── users.nix
+├── README.md
+└── wallpapers                      # A bunch of wallpapers 
+    ├── anime1.jpeg
+    ├── anime2.jpeg
+    ├── anime3.jpeg
+    ├── fishing.png
+    ├── free-as-in-freedom.jpeg
+    ├── grass.jpg
+    ├── lake.png
+    ├── mountain.png
+    ├── nixos-dark.png
+    ├── nixos-light.png
+    ├── only-grey.png
+    └── telescope.png
+
+</code></pre></div></div>
+<ul>
+  <li>Ho diviso l’hardware dal resto, le configurazioni hardware stanno in <code class="highlighter-rouge">hosts/</code></li>
+  <li>la configurazione del sistema sta in <code class="highlighter-rouge">modules/</code> mentre le configurazioni di home-manager stanno in <code class="highlighter-rouge">home/&lt;user-name&gt;</code>. Invece in <code class="highlighter-rouge">home/shared</code> sono le configurazioni comuni a tutti gli users (come il window manager o neovim)</li>
+</ul>
+
+<p>Ho uno script <code class="highlighter-rouge">build.sh</code> dove posso specificare che profilo usare senza dover scrivere l’intero comando nix-rebuild</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#! /run/current-system/sw/bin/sh</span>
+
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$# </span><span class="o">!=</span> 2  <span class="o">]]</span> <span class="k">then
+	</span><span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"Usage: build.sh &lt;system|home&gt; &lt;build_profie&gt;</span><span class="se">\n</span><span class="s2">"</span>
+	<span class="nb">echo</span> <span class="s2">"Currently supported users:"</span>
+	<span class="nb">echo</span> <span class="s2">" - </span><span class="se">\"</span><span class="s2">santo@acer</span><span class="se">\"</span><span class="s2"> "</span>
+	<span class="nb">echo</span> <span class="s2">" - </span><span class="se">\"</span><span class="s2">santo@desktop</span><span class="se">\"</span><span class="s2"> "</span>
+	<span class="nb">echo</span> <span class="s2">" - </span><span class="se">\"</span><span class="s2">lanto@hp</span><span class="se">\"</span><span class="s2"> "</span>
+	<span class="nb">exit
+</span><span class="k">fi
+
+if</span> <span class="o">[[</span> <span class="nv">$1</span> <span class="o">==</span> <span class="s2">"home"</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then
+	</span>home-manager switch <span class="nt">--flake</span> .#<span class="nv">$2</span> <span class="nt">--impure</span>
+    cowsay <span class="s2">"Everything is fine"</span>
+	<span class="nb">exit
+
+</span><span class="k">fi
+if</span> <span class="o">[[</span> <span class="nv">$1</span> <span class="o">==</span> <span class="s2">"system"</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then
+
+	</span><span class="nb">sudo </span>nixos-rebuild switch <span class="nt">--flake</span> .#<span class="nv">$2</span> <span class="nt">--impure</span>
+    cowsay <span class="s2">"Everything is fine"</span>
+	<span class="nb">exit
+</span><span class="k">fi
+
+</span><span class="nb">echo</span> <span class="s2">"Wrong arguments"</span>
+</code></pre></div></div>
+
+<p>Per quanto riguarda salvare credenziali (per esempio github), salvo le credenziali in <code class="highlighter-rouge">.secret/</code> poi le leggo e le scrivo su file come nel codice che vedi sotto. Questa soluzioni è opinabile e bisognerebbe usare un credential manager come <a href="https://nixos.wiki/wiki/Agenix">agenix</a>, prima o poi cambierò ad un sistema più sicuro.</p>
+<div class="language-nix highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span> <span class="nv">config</span><span class="p">,</span> <span class="nv">pkgs</span><span class="p">,</span> <span class="o">...</span><span class="p">}:</span>
+
+<span class="kd">let</span>
+        <span class="c"># Get input from file .secret/github-access-token</span>
+	<span class="c"># Make sure It has no new line at the end</span>
+  	<span class="nv">github-access-token</span> <span class="o">=</span> <span class="kr">builtins</span><span class="o">.</span><span class="nv">readFile</span> <span class="s2">"/home/santo/.config/nixos/.secret/github-access-token"</span><span class="p">;</span>
+<span class="kn">in</span>
+<span class="p">{</span>
+  <span class="c"># Setup .get-credentials file with the input from file .secret/github-access-token</span>
+  <span class="nv">home</span><span class="o">.</span><span class="nv">file</span><span class="o">.</span><span class="s2">".git-credentials"</span><span class="o">.</span><span class="nv">text</span> <span class="o">=</span> <span class="s2">''</span><span class="err">
+</span><span class="s2">https://San7o:</span><span class="si">${</span><span class="nv">github-access-token</span><span class="si">}</span><span class="s2">@github.com</span><span class="err">
+</span><span class="s2">  ''</span><span class="p">;</span>
+  
+  <span class="c"># .gitconfig configration</span>
+  <span class="nv">home</span><span class="o">.</span><span class="nv">file</span><span class="o">.</span><span class="s2">".gitconfig"</span><span class="o">.</span><span class="nv">text</span> <span class="o">=</span> <span class="s2">''</span><span class="err">
+</span><span class="s2">    [user]</span><span class="err">
+</span><span class="s2">        name = San7o</span><span class="err">
+</span><span class="s2">        email = santigio2003@gmail.com</span><span class="err">
+
+</span><span class="s2">    [credential]</span><span class="err">
+</span><span class="s2"> 	helper = store</span><span class="err">
+</span><span class="s2">  ''</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<figure class="image-card width-wide caption">
+  <img src="/images/nixos/neovim.jpg" alt="Neovim screenshot" />
+  
+  <figcaption class="caption-text">Neovim screenshot</figcaption>
+  
+</figure>
+
+<hr />
+
+<h1 id="risorse-esterne">Risorse Esterne</h1>
+<p>I siti di riferimento per cercare pacchetti e opzioni sono questi:</p>
+
+<ul>
+  <li><a href="https://search.nixos.org/packages">https://search.nixos.org/packages</a></li>
+  <li><a href="https://search.nixos.org/options">https://search.nixos.org/options</a></li>
+</ul>
+
+<p>Per un’introduzione completa a NixOS, consiglio questa guida:</p>
+
+<ul>
+  <li><a href="https://nixos-and-flakes.thiscute.world/introduction/">https://nixos-and-flakes.thiscute.world/introduction/</a></li>
+</ul>
+
+<p>Questo video a una visione più generale di NixOS e delle sue potenzialità:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=CwfKlX3rA6E">https://www.youtube.com/watch?v=CwfKlX3rA6E&amp;t=7s</a></li>
+</ul>
+
+<p>Questo canale parla in modo estensivo di NixOS:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/@vimjoyer">https://www.youtube.com/@vimjoyer</a></li>
+</ul>
+
+<h2 id="sistemi-simili">Sistemi simili</h2>
+<p>Esistono altre tecnologie per risolvere lo stesso problema come <strong>Ansible</strong> o <strong>Terraform</strong>, ma questi hanno uno scopo diverso: per esempio Ansible è ideato per gestire un grande numero di dispositivi e Terraform lavora più nel cloud. NixOS invece è estremamente veloce e comodo per quanto riguarda l’esperienza desktop, non è stato progettato per scalare (anche se può farlo bene). Adesso utilizzo un sistema ibrido con NixOS per gestire il sistema operativo e Ansible per eseguire comandi o rebuildare il sistema su più pc.</p>
+
+<hr />
+
+<h1 id="conclusione">Conclusione</h1>
+<p>Questa è la punta dell’iceberg per quanto riguarda configurare NixOS, ma penso sia abbastanza per lasciarti approfondire o semplicemente sapere qualcosa in più su una distribuzione “particolare” di linux. Personalmente mi trovo molto bene con NixOS e ne è valsa la pena impararlo, ci vediamo nei prossimi post sempre a tema tech!</p>
+
+
+    </div><!-- .post-content -->
+    <div class="post-share">
+      <span>Share:</span>
+      <a target="_blank"
+        href="https://twitter.com/intent/tweet?text=NixOS%20-%20Come%20configurare%20linux&amp;url=https://travelatoms.netlify.com/nixos" rel="noopener">Twitter</a>
+      <a target="_blank"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://travelatoms.netlify.com/nixos&amp;t=NixOS%20-%20Come%20configurare%20linux" rel="noopener">Facebook</a>
+    </div><!-- .share-post -->
+    <div class="author-box">
+      
+      <div class="author-avatar" style="background-image: url('images/pfp/pfp1.jpg')"><span class="screen-reader-text">Giovanni Santini's Picture</span></div>
+      
+      <div class="author-details">
+        <h2 class="author-title">About Giovanni Santini</h2>
+        <div class="author-bio"><p>Ciao! Sono Giovanni e qui voglio condividere tutto ciò che trovo di bello intorno a me e cose a cui tengo molto.</p>
+</div>
+        
+        <span class="author-location">Trento, Italia</span>
+        
+        
+      </div><!-- .author-details -->
+    </div><!-- .author-box -->
+  </article><!-- .post -->
+    
+
+  
+
+</main><!-- .main-content -->
+
+      <footer class="site-footer">
+  <div class="offsite-links">
+    
+      
+<a href="https://www.youtube.com/@giovannisantini6094" target="_blank" rel="noopener">
+  <span class="fa-youtube" aria-hidden="true"></span>
+  <span class="screen-reader-text">Youtube</span>
+</a>
+
+<a href="https://github.com/San7o" target="_blank" rel="noopener">
+  <span class="fa-github" aria-hidden="true"></span>
+  <span class="screen-reader-text">GitHub</span>
+</a>
+
+<a href="https://www.instagram.com/giovannisantini03" target="_blank" rel="noopener">
+  <span class="fa-instagram" aria-hidden="true"></span>
+  <span class="screen-reader-text">Instagram</span>
+</a>
+
+    
+  </div><!-- .offsite-links -->
+  <div class="footer-bottom">
+    <div class="site-info">
+      
+
+    </div><!-- .site-info -->
+    <a href="#page" id="back-to-top" class="back-to-top"><span class="screen-reader-text">Back to the top </span>&#8593;</a>
+  </div><!-- .footer-bottom -->
+</footer><!-- .site-footer -->
+
+    </div><!-- .inner -->
+  </div><!-- .site -->
+
+  <!-- Scripts -->
+  
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+  
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/custom.js"></script>
+
+</body>
+</html>

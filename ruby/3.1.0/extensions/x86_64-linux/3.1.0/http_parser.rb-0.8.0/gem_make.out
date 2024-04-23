@@ -1,0 +1,19 @@
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/nix/store/v9iifz1syfiw0307nwmrnhlcf054davk-ruby-3.1.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240423-5990-5k0uae sitelibdir\=./.gem.20240423-5990-5k0uae clean
+
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240423-5990-5k0uae sitelibdir\=./.gem.20240423-5990-5k0uae
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240423-5990-5k0uae sitelibdir\=./.gem.20240423-5990-5k0uae install
+install -c -p -m 755 ruby_http_parser.so ./.gem.20240423-5990-5k0uae
+
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240423-5990-5k0uae sitelibdir\=./.gem.20240423-5990-5k0uae clean

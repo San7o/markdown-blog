@@ -1,0 +1,16 @@
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/json-2.7.1/ext/json
+/nix/store/v9iifz1syfiw0307nwmrnhlcf054davk-ruby-3.1.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240423-5990-1k57co sitelibdir\=./.gem.20240423-5990-1k57co clean
+
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240423-5990-1k57co sitelibdir\=./.gem.20240423-5990-1k57co
+make: Nothing to be done for 'all'.
+
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240423-5990-1k57co sitelibdir\=./.gem.20240423-5990-1k57co install
+
+current directory: /home/lanto/Documents/markdown-blog/ruby/3.1.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240423-5990-1k57co sitelibdir\=./.gem.20240423-5990-1k57co clean
