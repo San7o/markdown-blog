@@ -3,10 +3,10 @@
     <channel>
         <title>Una vita un viaggio</title>
         <description>Cerco e mi circondo di tutto quello che trovo bellissimo, qui condivido tutto quello che mi passa per la testa</description>
-        <link>http://localhost:4000/</link>
-        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 26 Apr 2024 11:10:33 +0200</pubDate>
-        <lastBuildDate>Fri, 26 Apr 2024 11:10:33 +0200</lastBuildDate>
+        <link>https://travelatoms.netlify.com/</link>
+        <atom:link href="https://travelatoms.netlify.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 26 Apr 2024 11:13:57 +0200</pubDate>
+        <lastBuildDate>Fri, 26 Apr 2024 11:13:57 +0200</lastBuildDate>
         <generator>Jekyll v4.0.1</generator>
         
             <item>
@@ -148,8 +148,8 @@ hold su f -&amp;gt; shift
 &lt;p&gt;Mi trovo molto bene con la home-row e penso sia un piccolo miglioramento estremamente figo e da nerd che mi piace parecchio. Esiste un modo dietro alle tastiere, per esempio tanti utilizzano una tastiera divisa a metà, oppure mouse alternativi. Chissà magari in futuro li proverò anche io, ma per ora cerco di non fare acquisti non essenziali e questo che ho fatto è totalmente cost free.&lt;/p&gt;
 </description>
                 <pubDate>Fri, 26 Apr 2024 00:00:00 +0200</pubDate>
-                <link>http://localhost:4000/typing-experience</link>
-                <guid isPermaLink="true">http://localhost:4000/typing-experience</guid>
+                <link>https://travelatoms.netlify.com/typing-experience</link>
+                <guid isPermaLink="true">https://travelatoms.netlify.com/typing-experience</guid>
                 
                 <category>linux</category>
                 
@@ -157,7 +157,7 @@ hold su f -&amp;gt; shift
             </item>
         
             <item>
-                <title>NixOS - Come configurare linux</title>
+                <title>Generare il tuo sistema operativo in modo dichiarativo</title>
                 <description>&lt;p&gt;Chi lavora nell’informatica (o semplicemente è uno smanettone) ha bisogno di un sistema operativo stabile, che non si rompa e che quando si rompe può tornare ad una situazione funzionante. Linux è considerato un sistema stabile server-side, ma quando lo si utilizza quotidianamente come desktop si incorre spesso a diverse problematiche: il kernel non parte dopo che abbiamo installato qualche patch, problemi con grub che non riconosce le partizioni, pacchetti che si rompono dopo un’aggiornamento …
 In questo post parleremo di una distribuzione linux che risolve molti problemi comuni ad altre distribuzioni: &lt;strong&gt;NixOS&lt;/strong&gt;.&lt;/p&gt;
 
@@ -749,9 +749,9 @@ if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&
 &lt;p&gt;Questa è la punta dell’iceberg per quanto riguarda configurare NixOS, ma penso sia abbastanza per lasciarti approfondire o semplicemente sapere qualcosa in più su una distribuzione “particolare” di linux. Personalmente mi trovo molto bene con NixOS e ne è valsa la pena impararlo, ci vediamo nei prossimi post sempre a tema tech!&lt;/p&gt;
 
 </description>
-                <pubDate>Sat, 02 Mar 2024 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/nixos</link>
-                <guid isPermaLink="true">http://localhost:4000/nixos</guid>
+                <pubDate>Tue, 23 Apr 2024 00:00:00 +0200</pubDate>
+                <link>https://travelatoms.netlify.com/nixos</link>
+                <guid isPermaLink="true">https://travelatoms.netlify.com/nixos</guid>
                 
                 <category>linux</category>
                 
@@ -977,8 +977,8 @@ Nei seguenti paragrafi andremo a vedere come sono riuscito a realizzare questi o
 
 </description>
                 <pubDate>Sat, 02 Mar 2024 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/La-mia-second-brain</link>
-                <guid isPermaLink="true">http://localhost:4000/La-mia-second-brain</guid>
+                <link>https://travelatoms.netlify.com/La-mia-second-brain</link>
+                <guid isPermaLink="true">https://travelatoms.netlify.com/La-mia-second-brain</guid>
                 
                 <category>diario</category>
                 
@@ -1099,8 +1099,8 @@ Noi non siamo invisibili.&lt;/p&gt;
 
 </description>
                 <pubDate>Thu, 15 Feb 2024 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/Nessuno-e-invisibile</link>
-                <guid isPermaLink="true">http://localhost:4000/Nessuno-e-invisibile</guid>
+                <link>https://travelatoms.netlify.com/Nessuno-e-invisibile</link>
+                <guid isPermaLink="true">https://travelatoms.netlify.com/Nessuno-e-invisibile</guid>
                 
                 <category>volontariato</category>
                 
@@ -1473,8 +1473,8 @@ volontariato trentino per l’apertura di almeno uno spazio di comunità entro i
 &lt;p&gt;Qui finisce l’articolo ma inizia un nuovo percorso per la città e le sue persone, tutti noi. Abbiamo visto come è strutturata la gestione di Trento Capitale ma ci sarebbe molto ancora da approfondire. Non smetterò mai di ribadire quanto è importante il volontariato e di quanto è una grande opportunità per tutti noi, viva il volontariato!&lt;/p&gt;
 </description>
                 <pubDate>Wed, 14 Feb 2024 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/Guida-a-trento-capitale</link>
-                <guid isPermaLink="true">http://localhost:4000/Guida-a-trento-capitale</guid>
+                <link>https://travelatoms.netlify.com/Guida-a-trento-capitale</link>
+                <guid isPermaLink="true">https://travelatoms.netlify.com/Guida-a-trento-capitale</guid>
                 
                 <category>volontariato</category>
                 
@@ -1629,8 +1629,8 @@ Chiaramente in questa lista non ci sono tutte le realtà universitarie, e fuori 
 
 </description>
                 <pubDate>Mon, 06 Nov 2023 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/Fiera-delle-associazioni-studentesche-universitarie</link>
-                <guid isPermaLink="true">http://localhost:4000/Fiera-delle-associazioni-studentesche-universitarie</guid>
+                <link>https://travelatoms.netlify.com/Fiera-delle-associazioni-studentesche-universitarie</link>
+                <guid isPermaLink="true">https://travelatoms.netlify.com/Fiera-delle-associazioni-studentesche-universitarie</guid>
                 
                 <category>volontariato</category>
                 
@@ -1728,8 +1728,8 @@ Sostanzialmente è un portale di ricerca per lavoro a livello Europeo. Se sei in
 &lt;p&gt;Dunque dunque, le opportunità sono davvero tante, non hai più scuse per non iniziare un nuovo percorso. Se conosci qualche altra associazione che non ho messo, scrivimi pure così da avere una lista il più completa possibile per il beneficio di tutti i lettori.&lt;/p&gt;
 </description>
                 <pubDate>Sun, 29 Oct 2023 00:00:00 +0200</pubDate>
-                <link>http://localhost:4000/Chi-cerca-trova</link>
-                <guid isPermaLink="true">http://localhost:4000/Chi-cerca-trova</guid>
+                <link>https://travelatoms.netlify.com/Chi-cerca-trova</link>
+                <guid isPermaLink="true">https://travelatoms.netlify.com/Chi-cerca-trova</guid>
                 
                 <category>volontariato</category>
                 
@@ -1868,8 +1868,8 @@ Le free guide tour sono state davvero belle e ci sono per tutte le grandi città
 &lt;p&gt;Questo viaggio ha iniziato un nuovo periodo per me dove ho iniziato a muovermi in autonomia e a fare piccoli e grandi viaggi per l’italia. Mi ha sbloccato molto ed è stato un momento importante nella mia crescita. Buttati, buttati verso le opportunità che trovi perché ce ne sono continuamente tutto intorno a te, non aver paura di partire.&lt;/p&gt;
 </description>
                 <pubDate>Wed, 25 Oct 2023 00:00:00 +0200</pubDate>
-                <link>http://localhost:4000/Interrail-da-solo-un-viaggio-di-ricerca</link>
-                <guid isPermaLink="true">http://localhost:4000/Interrail-da-solo-un-viaggio-di-ricerca</guid>
+                <link>https://travelatoms.netlify.com/Interrail-da-solo-un-viaggio-di-ricerca</link>
+                <guid isPermaLink="true">https://travelatoms.netlify.com/Interrail-da-solo-un-viaggio-di-ricerca</guid>
                 
                 <category>viaggi</category>
                 
