@@ -3,11 +3,158 @@
     <channel>
         <title>Una vita un viaggio</title>
         <description>Cerco e mi circondo di tutto quello che trovo bellissimo, qui condivido tutto quello che mi passa per la testa</description>
-        <link>https://travelatoms.netlify.com/</link>
-        <atom:link href="https://travelatoms.netlify.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 23 Apr 2024 09:37:07 +0200</pubDate>
-        <lastBuildDate>Tue, 23 Apr 2024 09:37:07 +0200</lastBuildDate>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 26 Apr 2024 11:10:33 +0200</pubDate>
+        <lastBuildDate>Fri, 26 Apr 2024 11:10:33 +0200</lastBuildDate>
         <generator>Jekyll v4.0.1</generator>
+        
+            <item>
+                <title>Keyboard Only Man</title>
+                <description>&lt;p&gt;Ultimamente sto sperimentando con diverse tecnologie per aumentare la mia produttività nel typing ed interagire con il mio sistema operativo. Utilizzo un tiling window manager quindi quasi ogni interazione con il pc è da tastiera, per questo ho studiato dei modi interessanti per migliorare la mia produttività come macro o layers. In questo post veloce ti condivido delle tecnologie interessanti che ho adottato e che hanno migliorato la mia esperienza nell’usare il pc da tastiera.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;premessa&quot;&gt;Premessa&lt;/h2&gt;
+&lt;p&gt;Io sono un grande fan per quanto riguarda l’utilizzare tutto da tastiera, odio staccare le dita dai tasti per muovere il mouse, specialmente se sono sul mio desktop dove devo spostare l’intera mano per raggiungere il mouse. Adoro vim ed i vari shortcuts che offre, allora ho cercato come far funzionare questi shortcuts in ogni applicazione: non soltanto su vim o su applicazioni che supportano una vim mode.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;tiling-window-manager&quot;&gt;Tiling Window Manager&lt;/h1&gt;
+&lt;p&gt;Per essere chiari, un tiling window manager è un programma per gestire le finestre &lt;strong&gt;completamente da tastiera&lt;/strong&gt;. Tramite delle combinazioni di tasti posso aprire nuove finestre (applicazioni o terminali), muoverle e gestire più desktop (o workspaces se è più chiaro). Alcuni esempi sono i3, bspwm, awesomeWm, Sway e altri (scusami se non ho messo il tuo preferito). Io personalmente uso Hyprland su Wayland e mi trovo molto bene: è moderno e funziona in modo eccellente, non ho mai riscontrato problemi gravi nei vari mesi di utilizzo. In aggiunta al window manager, utilizzo dmenu come application launcher così posso aprire qualsiasi applicazione, e ho configurato diverse macro come i tasti per cambiare la luminosità dello schermo, fare screenshots o gestire il volume degli speakers (non sono cose ovvie quando installi linux da 0 !).&lt;/p&gt;
+
+&lt;figure class=&quot;image-card width-wide caption&quot;&gt;
+  &lt;img src=&quot;/images/kmonad/wm.png&quot; alt=&quot;Hyprland&quot; /&gt;
+  
+  &lt;figcaption class=&quot;caption-text&quot;&gt;Il mio window manager in questo momento&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;home-row&quot;&gt;Home-row&lt;/h1&gt;
+&lt;p&gt;Questa è la mia parte preferita e la ragione per cui ho voluto fare questo post. Quando utilizzi un tiling window manager o usi vari shortcuts su vim o firefox o qualsiasi altra applicazione, utilizzi molto i tasti “Meta” (o Win), “Shift”, “Ctrl”, “Alt”. Il problema di questi tasti è che in una tastiera standard sono scomodi da raggiungere, dovendo spesso staccare le dita dalla linea centrale della tastiera o allungare in modo non naturale il mignolo. L’idea di homerow è di mappare questi tasti usati frequentemente nei posti più accessibili della tastiera: proprio la linea centrale. Dopotutto dovresti avere i tasti più frequenti nelle posizioni più comode.&lt;/p&gt;
+
+&lt;p&gt;Ho mappato i tasti in questo modo:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a -&amp;gt; meta
+s -&amp;gt; alt
+d -&amp;gt; crtl
+f -&amp;gt; shift
+
+j -&amp;gt; shift
+k -&amp;gt; ctrl
+l -&amp;gt; alt
+ò -&amp;gt; meta
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;La mappatura è specchiata così posso usare arbitrariamente una delle due mani libere. Per esempio se voglio fare la lettera “R” maiuscola dovrò premere “j + r”.&lt;/p&gt;
+
+&lt;p&gt;Si ma quindi dove vanno a finire i tasti originali che ora hai cambiato? Semplice, sono sempre lì. Questa macro viene attivata solo se tengo premuto il tasto, se invece faccio un singolo “tap” il tasto registrerà l’impostazione normale. Per essere chiari:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tap su f -&amp;gt; f
+hold su f -&amp;gt; shift
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Avere i tasti così accessibili è davvero estremamente comodo, anche se non sono particolarmente più veloce, ne vale assolutamente la pena per la comodità. Per far funzionare la homerow ho utilizzato un programma che si chiama kmonad che vedremo più avanti, dopo aver introdotto i layers.&lt;/p&gt;
+
+&lt;h2 id=&quot;keyboard-layers&quot;&gt;Keyboard Layers&lt;/h2&gt;
+&lt;p&gt;Un modo per espandere sull’idea di mappare funzionalità sulla tastiera è quello dei layers. Premendo un tasto o tenendolo premuto, posso andare a cambiare la funzionalità di atri tasti, organizzati in layers. Posso per esempio avere un layer di shortcuts alla vim oppure un layer che mi mappa i numeri in modo che siano più comodi da raggiungere. Posso poi switchare tra un layer ed un’altro con un bottone o una combinazione di bottoni. I layers sono molto potenti e specifici per le proprie esigenze, ti mostrerò quello che uso io qua sotto.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;kmonad&quot;&gt;Kmonad&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/kmonad/kmonad&quot;&gt;Kmonad&lt;/a&gt; è un programma che ci permette di fare quanto detto sopra. Funziona con qualsiasi tastiera e con qualsiasi pc, ma su linux diversamente da windows ha il supporto dal kernel quindi è estremamente veloce. Puoi configurare shortcuts e layers da un file di configurazione, nella cartella &lt;code class=&quot;highlighter-rouge&quot;&gt;keymap/&lt;/code&gt; della repo di github trovi in tutorial completo e dettagliato con tutto quello che puoi fare.&lt;/p&gt;
+
+&lt;p&gt;Ti spiego come ho configurato io la mia tastiera, se vuoi sapere di più su come kmonad funziona ti consiglio di dare un’occhiata alla repo.&lt;/p&gt;
+
+&lt;p&gt;Questa è la configurazione default di una tastiera Italiana 100%:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12        ssrq slck pause
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc  ins  home pgup  nlck kp/  kp*  kp-
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    ret   del  end  pgdn  kp7  kp8  kp9  kp+
+  caps a    s    d    f    g    h    j    k    l    ;    &apos;    \                          kp4  kp5  kp6
+  lsft 102d z    x    c    v    b    n    m    ,    .    /    rsft            up         kp1  kp2  kp3  kprt
+  lctl lmet lalt           spc                 ralt rmet cmp  rctl       left down rght  kp0  kp.
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ho ridefinito i seguenti layers per gli shortcuts di vim e una tastiera per i numeri:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(deflayer numbers
+  _    _    _    _    _    _    _    _    _    _    _    _    _          _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _     _    _    _    _    _    _    _
+  _    _    _    _    _    _    XX   /    7    8    9    -    _    _     _    _    _    _    _    _    _
+  _    _    _    _    _    _    XX   *    4    5    6    +    _                         _    _    _
+  _    _    _    _    _    _    XX   0    1    2    3    _    _               _         _    _    _    _
+  _    _    _              _                   _    _    _    _          _    _    _    _    _
+)
+
+(deflayer vimkeys
+  _    _    _    _    _    _    _    _    _    _    _    _    _          _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _     _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _     _    _    _    _    _    _    _
+  _    _    _    _    _    _  left down  up  right  _    _    _                         _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _               _         _    _    _    _
+  _    _    _              _                   _    _    _    _          _    _    _    _    _
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ho creato degli alias per cambiare layers in questo modo:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(defalias
+  ;; alias_name ( ;; function to execute )
+  num  (layer-toggle numbers) ;; Bind num to a button that switches to a layer
+  vimkeys  (layer-toggle vimkeys)
+)
+
+;; Homerow!
+;; https://precondition.github.io/home-row-mods
+(defalias
+    met_a (tap-hold-next-release 200 a lmet) ;; tap = a, hold for 200ms = lmet (meta)
+    alt_s (tap-hold-next-release 200 s lalt)
+    ctl_d (tap-hold-next-release 200 d lctl)
+    sft_f (tap-hold-next-release 200 f lsft)
+
+    sft_j (tap-hold-next-release 200 j rsft)
+    ctl_k (tap-hold-next-release 200 k rctl)
+    alt_l (tap-hold-next-release 200 l lalt)
+    met_; (tap-hold-next-release 200 ; rmet)
+    
+    num_g (tap-hold-next-release 200 g @num)
+    vim_v (tap-hold-next-release 200 v @vimkeys)
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;E li ho messi in questo modo:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(deflayer homerow
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12        ssrq slck pause
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc  ins  home pgup  nlck kp/  kp*  kp-
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    ret   del  end  pgdn  kp7  kp8  kp9  kp+
+  caps @met_a @alt_s @ctl_d @sft_f @num_g h  @sft_j @ctl_k @alt_l @met_;  &apos;  \           kp4  kp5  kp6
+  lsft 102d z    x    c  @vim_v b    n    m    ,    .    /    rsft            up         kp1  kp2  kp3  kprt
+  lctl lmet lalt           spc                 ralt rmet cmp  rctl       left down rght  kp0  kp.
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;layouts-diversi-da-qwerty&quot;&gt;Layouts diversi da QWERTY&lt;/h1&gt;
+
+&lt;p&gt;Il layout standard internazionale per le tastiere è chiamato “QWERTY” semplicemente perché i primi tasti in ordine sono proprio q, w, e… Questo layout è stato ideato nel 1932 per le macchine da scrivere, infatti queste macchine rischiavano di incepparsi se venivano premuti due tasti vicini uno dopo l’altro quindi di è deciso di distanziare il più possibile i tasti più frequenti. Esistono tante alternative a qwerty che sono invece pensate per essere più comode da usare per la scrittura o in modo più specifico per la programmazione come la Workman. Se vuoi approfondire puoi leggere  &lt;a href=&quot;https://kinesis-ergo.com/switching-from-qwerty/&quot;&gt;questo&lt;/a&gt; articolo.&lt;/p&gt;
+
+&lt;figure class=&quot;image-card width-wide caption&quot;&gt;
+  &lt;img src=&quot;/images/kmonad/workman.png&quot; alt=&quot;Workman&quot; /&gt;
+  
+  &lt;figcaption class=&quot;caption-text&quot;&gt;Workman keyboard layout&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;conclusione&quot;&gt;Conclusione&lt;/h1&gt;
+&lt;p&gt;Mi trovo molto bene con la home-row e penso sia un piccolo miglioramento estremamente figo e da nerd che mi piace parecchio. Esiste un modo dietro alle tastiere, per esempio tanti utilizzano una tastiera divisa a metà, oppure mouse alternativi. Chissà magari in futuro li proverò anche io, ma per ora cerco di non fare acquisti non essenziali e questo che ho fatto è totalmente cost free.&lt;/p&gt;
+</description>
+                <pubDate>Fri, 26 Apr 2024 00:00:00 +0200</pubDate>
+                <link>http://localhost:4000/typing-experience</link>
+                <guid isPermaLink="true">http://localhost:4000/typing-experience</guid>
+                
+                <category>linux</category>
+                
+                
+            </item>
         
             <item>
                 <title>NixOS - Come configurare linux</title>
@@ -603,8 +750,8 @@ if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&
 
 </description>
                 <pubDate>Sat, 02 Mar 2024 00:00:00 +0100</pubDate>
-                <link>https://travelatoms.netlify.com/nixos</link>
-                <guid isPermaLink="true">https://travelatoms.netlify.com/nixos</guid>
+                <link>http://localhost:4000/nixos</link>
+                <guid isPermaLink="true">http://localhost:4000/nixos</guid>
                 
                 <category>linux</category>
                 
@@ -830,8 +977,8 @@ Nei seguenti paragrafi andremo a vedere come sono riuscito a realizzare questi o
 
 </description>
                 <pubDate>Sat, 02 Mar 2024 00:00:00 +0100</pubDate>
-                <link>https://travelatoms.netlify.com/La-mia-second-brain</link>
-                <guid isPermaLink="true">https://travelatoms.netlify.com/La-mia-second-brain</guid>
+                <link>http://localhost:4000/La-mia-second-brain</link>
+                <guid isPermaLink="true">http://localhost:4000/La-mia-second-brain</guid>
                 
                 <category>diario</category>
                 
@@ -952,8 +1099,8 @@ Noi non siamo invisibili.&lt;/p&gt;
 
 </description>
                 <pubDate>Thu, 15 Feb 2024 00:00:00 +0100</pubDate>
-                <link>https://travelatoms.netlify.com/Nessuno-e-invisibile</link>
-                <guid isPermaLink="true">https://travelatoms.netlify.com/Nessuno-e-invisibile</guid>
+                <link>http://localhost:4000/Nessuno-e-invisibile</link>
+                <guid isPermaLink="true">http://localhost:4000/Nessuno-e-invisibile</guid>
                 
                 <category>volontariato</category>
                 
@@ -1326,8 +1473,8 @@ volontariato trentino per l’apertura di almeno uno spazio di comunità entro i
 &lt;p&gt;Qui finisce l’articolo ma inizia un nuovo percorso per la città e le sue persone, tutti noi. Abbiamo visto come è strutturata la gestione di Trento Capitale ma ci sarebbe molto ancora da approfondire. Non smetterò mai di ribadire quanto è importante il volontariato e di quanto è una grande opportunità per tutti noi, viva il volontariato!&lt;/p&gt;
 </description>
                 <pubDate>Wed, 14 Feb 2024 00:00:00 +0100</pubDate>
-                <link>https://travelatoms.netlify.com/Guida-a-trento-capitale</link>
-                <guid isPermaLink="true">https://travelatoms.netlify.com/Guida-a-trento-capitale</guid>
+                <link>http://localhost:4000/Guida-a-trento-capitale</link>
+                <guid isPermaLink="true">http://localhost:4000/Guida-a-trento-capitale</guid>
                 
                 <category>volontariato</category>
                 
@@ -1482,8 +1629,8 @@ Chiaramente in questa lista non ci sono tutte le realtà universitarie, e fuori 
 
 </description>
                 <pubDate>Mon, 06 Nov 2023 00:00:00 +0100</pubDate>
-                <link>https://travelatoms.netlify.com/Fiera-delle-associazioni-studentesche-universitarie</link>
-                <guid isPermaLink="true">https://travelatoms.netlify.com/Fiera-delle-associazioni-studentesche-universitarie</guid>
+                <link>http://localhost:4000/Fiera-delle-associazioni-studentesche-universitarie</link>
+                <guid isPermaLink="true">http://localhost:4000/Fiera-delle-associazioni-studentesche-universitarie</guid>
                 
                 <category>volontariato</category>
                 
@@ -1581,8 +1728,8 @@ Sostanzialmente è un portale di ricerca per lavoro a livello Europeo. Se sei in
 &lt;p&gt;Dunque dunque, le opportunità sono davvero tante, non hai più scuse per non iniziare un nuovo percorso. Se conosci qualche altra associazione che non ho messo, scrivimi pure così da avere una lista il più completa possibile per il beneficio di tutti i lettori.&lt;/p&gt;
 </description>
                 <pubDate>Sun, 29 Oct 2023 00:00:00 +0200</pubDate>
-                <link>https://travelatoms.netlify.com/Chi-cerca-trova</link>
-                <guid isPermaLink="true">https://travelatoms.netlify.com/Chi-cerca-trova</guid>
+                <link>http://localhost:4000/Chi-cerca-trova</link>
+                <guid isPermaLink="true">http://localhost:4000/Chi-cerca-trova</guid>
                 
                 <category>volontariato</category>
                 
@@ -1721,8 +1868,8 @@ Le free guide tour sono state davvero belle e ci sono per tutte le grandi città
 &lt;p&gt;Questo viaggio ha iniziato un nuovo periodo per me dove ho iniziato a muovermi in autonomia e a fare piccoli e grandi viaggi per l’italia. Mi ha sbloccato molto ed è stato un momento importante nella mia crescita. Buttati, buttati verso le opportunità che trovi perché ce ne sono continuamente tutto intorno a te, non aver paura di partire.&lt;/p&gt;
 </description>
                 <pubDate>Wed, 25 Oct 2023 00:00:00 +0200</pubDate>
-                <link>https://travelatoms.netlify.com/Interrail-da-solo-un-viaggio-di-ricerca</link>
-                <guid isPermaLink="true">https://travelatoms.netlify.com/Interrail-da-solo-un-viaggio-di-ricerca</guid>
+                <link>http://localhost:4000/Interrail-da-solo-un-viaggio-di-ricerca</link>
+                <guid isPermaLink="true">http://localhost:4000/Interrail-da-solo-un-viaggio-di-ricerca</guid>
                 
                 <category>viaggi</category>
                 
